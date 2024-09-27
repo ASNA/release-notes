@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ASNA ecr-setup|4.1.24.0</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://nyc3.digitaloceanspaces.com/asna-assets/downloads/assets/release-notes.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">ASNA ecr-setup|4.1.24.0</h1>
+</header>
+<p><img src="https://nyc3.digitaloceanspaces.com/asna-assets/asna-com/home/ASNA-logo.webp" alt="ASNA Logo"/></p>
+<h1 id="asna-encore-release-notes">ASNA Encore release notes</h1>
+<p>Version: 4.1.24.0 - Beta (generally not for production environments)</p>
+<p>Release date: 2024-09-26</p>
+<hr />
+<h2 id="net-aka-.net-core-and-visual-studio">.NET (aka .NET Core) and
+Visual Studio</h2>
+<p>ASNA Encore 4.1.8.0+ and ASNA Monarch 11.4.34.0+ provide .NET 8
+support.</p>
+<ul>
+<li>Minimum .NET version: .NET 6</li>
+<li>Minimum Visual Studio: Visual Studio 2022 build: 17.8</li>
+</ul>
+<h2 id="platform-support">Platform support</h2>
+<p>See the <a
+href="https://www.asna.com/en/support/product-requirements">ASNA Version
+Policy</a> for full requirements</p>
+<blockquote>
+<p>You can only install one version of an ASNA Windows product on a
+single PC. For example, you can’t install ASNA Visual RPG for .NET 17.x
+on a PC on which ASNA Visual RPG for .NET 16.x is installed.</p>
+</blockquote>
+<h2 id="general-installation-tips">General installation tips</h2>
+<ul>
+<li><p>We strongly recommend you apply all pending Windows updates
+before installing any of our Windows products.</p></li>
+<li><p>Don’t install any ASNA Windows products while Visual Studio is
+running.</p></li>
+<li><p>For our products that snap into Visual Studio (ie, Visual RPG for
+.NET Framework, Wings, Mobile RPG, etc.) be sure to install Visual
+Studio first.</p></li>
+</ul>
+<h2 id="visual-studio-2022-editions">Visual Studio 2022 Editions</h2>
+<p>Visual Studio 2022 17.4 or higher Professional or Enterprise edition
+is required with the Papa family.</p>
+<h2 id="visual-studio-local-help-installation">Visual Studio local help
+installation</h2>
+<p>Visual Studio 2022 treats local (offline) as an optional component.
+As such installing it requires <a
+href="https://docs.asna.com/documentation/Help150/Readmes/Help150VisualStudioWorkloads.htm">some
+additional steps</a>:</p>
+<p>When installing Visual Studio 2019:</p>
+<ol type="1">
+<li>Under the Individual Components tab.</li>
+<li>On the Code Tools section.</li>
+<li>Enable the Help Viewer component.</li>
+</ol>
+<p>To verify the Help Viewer is installed, look at the top of the Help
+Menu in Visual Studio. The following three options should be visible at
+the top of the menu:</p>
+<ol type="1">
+<li>View Help</li>
+<li>Add and Remove Help Content</li>
+<li>Set Help Preferences</li>
+</ol>
+<hr />
+</body>
+</html>
+<h2 id="SinceVersion">Changes Since Version: 4.1.22.0</h2>
+
+<span class="changeNoteHeading"> QSys - DataGate.Client</span>
+<ul>
+    <li>Take hard dependency for System.Text.Json bug.</li>
+    <li>Vulnerable text json.</li>
+</ul>
+
+<span class="changeNoteHeading"> QSys - Runtime</span>
+<ul>
+    <li>Added missing TestTime extension method for FixedString.</li>
+    <li>Added missing Sum methods for various kinds of Fixed Size arrays.</li>
+    <li>Fixed bug in Initializing arrays to a value when the value is not quite the right type (eg short array initialized with an int).</li>
+</ul>
+
+<span class="changeNoteHeading"> RnD - Encore Compiler</span>
+<ul>
+    <li>Prevent duplicate names for DS.</li>
+    <li>Report declared but unused fields.</li>
+    <li>Fixed potential double PackageReference to DG and Runtime</li>
+    <li>Support Hex fields in externally described DS.</li>
+    <li>Fix bugs in issuing unused field warnings.</li>
+    <li>Fixed MOVARR *ZEROS ARR giving compiler error.</li>
+    <li>Don't issue error messages with negative line numbers for duplicate use of record format and its fields.</li>
+    <li>Fixed compiler bug/crash with CALLB when calling a procedure (*Entry -- not a subprocedure)</li>
+    <li>Fixed negative linenumbers and error msg typo.</li>
+    <li>Shared DS were not translated as static.</li>
+    <li>Fixed get/set generation for empty setter.</li>
+    <li>Ensure Console apps have a Main entry point.</li>
+    <li>Fixed bug with SUMARR for fixed-size arrays.</li>
+    <li>Removed SumArr from built-in enum.</li>
+    <li>Make DIM arrays unidimensional.</li>
+    <li>Don't allow BEGPROC in classes that are not Monarch modules.</li>
+    <li>Check conversion overflow when doing value conversions (e.g. converting a decimal constant to integer).</li>
+    <li>Remove ExitApp from the command pool so the language service doesn't colorize it.</li>
+    <li>A field declared in a nested class with the same name as a field in the containing class was not properly declared.</li>
+    <li>Fixed bug in dealing with decimal.MaxValue, which the compiler was trying to convert to a fixed decimal.</li>
+    <li>Fixed bug in a local declaration within a nested class of type of the container class.</li>
+    <li>Issue error when multi DS has no name.</li>
+    <li>Fixed issues with figuring out the current type being source-generated (could be an interface or enum too).</li>
+    <li>Revisited MOVEARR to iron out bugs when compiling numeric MOVEARR commands.</li>
+    <li>Fixed bug in translation of ZSUB with *HIVAL or *LOVAL.</li>
+    <li>Fixed the code generated for XFOOT to call new methods in the runtime.</li>
+    <li>Fixed bug in obtaining the default namespace for a Trekkerized project out of the original Encore csproj file.</li>
+    <li>Fixed crash due to *partial classes not having program indicators declared in them.</li>
+    <li>Take hard dependency for System.Text.Json bug.</li>
+    <li>Set DCLFLD breakpoints on the NEW or INZ keywords, and don't set one if the DCLFLD doesn't have INZ nor NEW.</li>
+    <li>Disable all CS compilation warnings in the source generated for Encore compilations.</li>
+</ul>
+
+<span class="changeNoteHeading"> RnD - Encore IDE</span>
+<ul>
+    <li>Remove ref to deleted CommandPool item.</li>
+</ul>
+
+<span class="changeNoteHeading"> RnD - Encore SDK</span>
+<ul>
+    <li>Take hard dependency for System.Security.Cryptography vulnerability.</li>
+    <li>Fix regression in project with subdirectories.</li>
+</ul>
+<div class="copyright">Copyright © 2024 by ASNA, Inc. All rights reserved</div>
