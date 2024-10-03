@@ -23,7 +23,7 @@ function collect-info {
                 # write-host "'$readme_file' '$release_date' '$family'"
                 if ($family -ne $prev_family) {
                     $global:linesCollection += ""                    
-                    $global:linesCollection += "### Release date: $release_date Family: $family "                    
+                    $global:linesCollection += "#### Release date: $release_date Family: $family "                    
 
                     $prev_family = $family
                 }
