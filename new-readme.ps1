@@ -24,8 +24,6 @@ function collect-info {
                 if ($family -ne $prev_family) {
                     $global:linesCollection += ""                    
                     $global:linesCollection += "## Release date: $release_date Family: $family "                    
-                    $global:linesCollection += "---"                    
-
 
                     $prev_family = $family
                 }
