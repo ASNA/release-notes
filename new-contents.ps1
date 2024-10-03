@@ -1,6 +1,6 @@
 $global:linesCollection = @()
 
-function merge-file {
+function collect-info {
     param (
         [string] $input_file
     )
@@ -22,7 +22,11 @@ function merge-file {
 
                 # write-host "'$readme_file' '$release_date' '$family'"
                 if ($family -ne $prev_family) {
+                    $global:linesCollection += ""                    
                     $global:linesCollection += "## Release date: $release_date Family: $family "                    
+                    $global:linesCollection += "---"                    
+
+
                     $prev_family = $family
                 }
    
@@ -35,14 +39,12 @@ function merge-file {
     }        
 }
 
-write-host "# ASNA Product Release Notes"
-write-host ""
-write-host "This is the repository of release notes for ASNA product downloads." 
-write-host ""
+$global:linesCollection += "# ASNA Product Release Notes"
+$global:linesCollection += ""
+$global:linesCollection += "This is the repository of release notes for ASNA product downloads." 
+$global:linesCollection += ""
 
-
-
-merge-file -input_file list.txt
+collect-info -input_file list.txt
 
 $stringArray = [string[]]$linesCollection
 $stringArray | Set-Content -Path "./readme.md"
