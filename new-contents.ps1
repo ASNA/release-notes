@@ -1,3 +1,5 @@
+$global:linesCollection = @()
+
 function merge-file {
     param (
         [string] $input_file
@@ -20,21 +22,12 @@ function merge-file {
 
                 # write-host "'$readme_file' '$release_date' '$family'"
                 if ($family -ne $prev_family) {
-                    write-host ""
-                    Write-Host "## Release date: $release_date Family: $family "                    
+                    $global:linesCollection += "## Release date: $release_date Family: $family "                    
                     $prev_family = $family
                 }
-                # https://asna.github.io/release-notes/2024-02-02-datagate16/dg400-16.0.32.0.html
-
-
-
-
-                write-host "* [$readme_file]($url_prefix$release_date-$family/$readme_file)"
-
-
-            }
-
-
+   
+                $global:linesCollection += "* [$readme_file]($url_prefix$release_date-$family/$readme_file)"
+            }  
         }        
     } else {
         Write-Output "File not found at: $input_file"
@@ -50,3 +43,6 @@ write-host ""
 
 
 merge-file -input_file list.txt
+
+$stringArray = [string[]]$linesCollection
+$stringArray | Set-Content -Path "./readme.md"
