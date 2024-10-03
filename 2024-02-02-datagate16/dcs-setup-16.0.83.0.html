@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>ASNA dss-setup | 16.0.80.0</title>
+  <title>ASNA dcs-setup | 16.0.83.0</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -26,25 +26,14 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">ASNA dss-setup | 16.0.80.0</h1>
+<h1 class="title">ASNA dcs-setup | 16.0.83.0</h1>
 </header>
 <p><img src="https://nyc3.digitaloceanspaces.com/asna-assets/asna-com/home/ASNA-logo.webp" alt="ASNA Logo"/></p>
-<h1 id="datagate-for-sql-server-release-notes">DataGate for SQL Server
-release notes</h1>
-<p>Version: 16.0.80.0 - Generally Available (for production environments)</p>
+<h1 id="asna-datagate-component-suite-release-notes">ASNA DataGate
+Component Suite release notes</h1>
+<p>Version: 16.0.83.0 - Generally Available (for production environments)</p>
 <p>Release date: 2024-02-02</p>
 <hr />
-<blockquote>
-<p>Users updating from v14 and prior versions of DSS should not activate
-the new multimember support unless necessary, as it may cause
-errors.</p>
-</blockquote>
-<h2 id="installing-onto-clustered-servers">Installing onto Clustered
-Servers</h2>
-<p>DSS can also be installed onto clustered servers by following the
-instructions detailed in our <a
-href="https://docs.asna.com/documentation/Help170/DSS/_HTML/dssInstallingClusters.htm">Installation
-Guide</a>.</p>
 <h2 id="platform-support">Platform support</h2>
 <p>See the <a
 href="https://www.asna.com/en/support/product-requirements">ASNA Version
@@ -64,6 +53,29 @@ running.</p></li>
 .NET Framework, Wings, Mobile RPG, etc.) be sure to install Visual
 Studio first.</p></li>
 </ul>
+<h2 id="visual-studio-2022-editions">Visual Studio 2022 Editions</h2>
+<p>Visual Studio 2022 17.4 or higher Professional or Enterprise edition
+is required with the Papa family.</p>
+<h2 id="visual-studio-local-help-installation">Visual Studio local help
+installation</h2>
+<p>Visual Studio 2022 treats local (offline) as an optional component.
+As such installing it requires <a
+href="https://docs.asna.com/documentation/Help150/Readmes/Help150VisualStudioWorkloads.htm">some
+additional steps</a>:</p>
+<p>When installing Visual Studio 2019:</p>
+<ol type="1">
+<li>Under the Individual Components tab.</li>
+<li>On the Code Tools section.</li>
+<li>Enable the Help Viewer component.</li>
+</ol>
+<p>To verify the Help Viewer is installed, look at the top of the Help
+Menu in Visual Studio. The following three options should be visible at
+the top of the menu:</p>
+<ol type="1">
+<li>View Help</li>
+<li>Add and Remove Help Content</li>
+<li>Set Help Preferences</li>
+</ol>
 <h2 id="database-name-change">Database Name change</h2>
 <p>DataGate 17 features secure database name storage using Windows
 DPAPI.ASNA has always recommended using <code>*PUBLIC</code> database
@@ -105,9 +117,6 @@ recommended “*Public/” prefix. If so, you must configure the “Load User
 Profile = True” IIS Application Pool setting (also mentioned in the
 Release Notes) as a workaround. It is highly recommended to remove this
 workaround when you install the release of DataGate.</p>
-<h2 id="visual-studio-2022-editions">Visual Studio 2022 Editions</h2>
-<p>Visual Studio 2022 17.4 or higher Professional or Enterprise edition
-is required with the Papa family.</p>
 <h2 id="secure-sockets-layer-ssl">Secure Sockets Layer (SSL)</h2>
 <p>The DataGate client software contained in this release significantly
 changes the way Secure Sockets Layer (SSL) connections are configured.
@@ -191,10 +200,10 @@ the left, and click <code>Run Anyway</code> on the following window.</p>
 <hr />
 </body>
 </html>
-<h2 id="SinceVersion">Changes Since Version: 16.0.79.0</h2>
+<h2 id="SinceVersion">Changes Since Version: 16.0.82.0</h2>
 
-<span class="changeNoteHeading"> DataGate Server</span>
+<span class="changeNoteHeading"> Clients - DataGate Explorer</span>
 <ul>
-    <li>Case 21464. DGCPYFILE generates error when connected to DG16.x.</li>
+    <li>Case 21606. Copy and Copy OLE Print Fielddef Source to Project crashes Visual Studio.</li>
 </ul>
 <div class="copyright">Copyright © 2024 by ASNA, Inc. All rights reserved</div>
