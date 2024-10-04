@@ -1,3 +1,7 @@
+# Create read.md file for Release Notes GitHub repo.
+# https://github.com/ASNA/release-notes
+
+
 function get-release-note-directory {    
     param (
         [string] $url_prefix    
@@ -34,8 +38,5 @@ get-release-note-directory -url_prefix $url_prefix
 $stringArray = [string[]]$linesCollection
 $stringArray | set-content -Path "./readme.md"
 write-host New readme.md written. -ForegroundColor green
-
-$stringArray | set-content -Path "./index.html"
-write-host New index.html. -ForegroundColor green
 
 

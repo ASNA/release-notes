@@ -60,6 +60,8 @@ This is the repository of release notes for ASNA product downloads.
 * [dgstudio-16.0.99.0.html](https://asna.github.io/release-notes/2024-02-02-datagate16/dgstudio-16.0.99.0.html)
 * [dss-setup-16.0.83.0.html](https://asna.github.io/release-notes/2024-02-02-datagate16/dss-setup-16.0.83.0.html)
 
+#### Release date: 2024-02-01 Family: datagate15 
+
 #### Release date: 2023-12-06 Family: nancy 
 * [avr-setup-16.0.84.0.html](https://asna.github.io/release-notes/2023-12-06-nancy/avr-setup-16.0.84.0.html)
 * [browser-terminal-16.0.84.0.html](https://asna.github.io/release-notes/2023-12-06-nancy/browser-terminal-16.0.84.0.html)
@@ -68,4 +70,8 @@ This is the repository of release notes for ASNA product downloads.
 * [monarch-setup-10.0.88.0.html](https://asna.github.io/release-notes/2023-12-06-nancy/monarch-setup-10.0.88.0.html)
 * [synon-escape-10.0.59.0.html](https://asna.github.io/release-notes/2023-12-06-nancy/synon-escape-10.0.59.0.html)
 * [wings-setup-10.0.90.0.html](https://asna.github.io/release-notes/2023-12-06-nancy/wings-setup-10.0.90.0.html)
+
+#### Release date: 2023-03-08 Family: badger 
+* [avr-setup-5-5.1.17.0.html](https://asna.github.io/release-notes/2023-03-08-badger/avr-setup-5-5.1.17.0.html)
+* [deployment-setup-5-5.1.17.0.html](https://asna.github.io/release-notes/2023-03-08-badger/deployment-setup-5-5.1.17.0.html)
 
