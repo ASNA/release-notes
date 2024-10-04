@@ -34,3 +34,8 @@ get-release-note-directory -url_prefix $url_prefix
 $stringArray = [string[]]$linesCollection
 $stringArray | set-content -Path "./readme.md"
 write-host New readme.md written. -ForegroundColor green
+
+$stringArray | set-content -Path "./index.html"
+write-host New index.html. -ForegroundColor green
+
+
