@@ -71,7 +71,7 @@ This is the repository of release notes for ASNA product downloads.
 * [synon-escape-10.0.59.0.html](https://asna.github.io/release-notes/2023-12-06-nancy/synon-escape-10.0.59.0.html)
 * [wings-setup-10.0.90.0.html](https://asna.github.io/release-notes/2023-12-06-nancy/wings-setup-10.0.90.0.html)
 
-#### Release date: 2023-03-08 Family: badger 
-* [avr-setup-5-5.1.17.0.html](https://asna.github.io/release-notes/2023-03-08-badger/avr-setup-5-5.1.17.0.html)
-* [deployment-setup-5-5.1.17.0.html](https://asna.github.io/release-notes/2023-03-08-badger/deployment-setup-5-5.1.17.0.html)
+#### Release date: 2023-03-28 Family: badger 
+* [avr-setup-5-5.1.17.0.html](https://asna.github.io/release-notes/2023-03-28-badger/avr-setup-5-5.1.17.0.html)
+* [deployment-setup-5-5.1.17.0.html](https://asna.github.io/release-notes/2023-03-28-badger/deployment-setup-5-5.1.17.0.html)
 
