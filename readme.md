@@ -2,6 +2,10 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2024-10-08 Family: papa 
+* [ecr-setup-4.1.26.0.html](https://asna.github.io/release-notes/2024-10-08-papa/ecr-setup-4.1.26.0.html)
+* [monarch-setup-11.4.43.0.html](https://asna.github.io/release-notes/2024-10-08-papa/monarch-setup-11.4.43.0.html)
+
 #### Release date: 2024-10-03 Family: papa-beta 
 * [ecr-setup-4.1.26.0.html](https://asna.github.io/release-notes/2024-10-03-papa-beta/ecr-setup-4.1.26.0.html)
 * [monarch-setup-11.4.43.0.html](https://asna.github.io/release-notes/2024-10-03-papa-beta/monarch-setup-11.4.43.0.html)
@@ -65,6 +69,7 @@ This is the repository of release notes for ASNA product downloads.
 #### Release date: 2023-12-06 Family: nancy 
 * [avr-setup-16.0.84.0.html](https://asna.github.io/release-notes/2023-12-06-nancy/avr-setup-16.0.84.0.html)
 * [browser-terminal-16.0.84.0.html](https://asna.github.io/release-notes/2023-12-06-nancy/browser-terminal-16.0.84.0.html)
+* [deployment-setup-16.0.83.0.html](https://asna.github.io/release-notes/2023-12-06-nancy/deployment-setup-16.0.83.0.html)
 * [mobilerpg-setup-10.0.89.0.html](https://asna.github.io/release-notes/2023-12-06-nancy/mobilerpg-setup-10.0.89.0.html)
 * [monarch-nomad-16.0.83.0.html](https://asna.github.io/release-notes/2023-12-06-nancy/monarch-nomad-16.0.83.0.html)
 * [monarch-setup-10.0.88.0.html](https://asna.github.io/release-notes/2023-12-06-nancy/monarch-setup-10.0.88.0.html)
@@ -73,5 +78,5 @@ This is the repository of release notes for ASNA product downloads.
 
 #### Release date: 2023-03-28 Family: badger 
 * [avr-setup-5-5.1.17.0.html](https://asna.github.io/release-notes/2023-03-28-badger/avr-setup-5-5.1.17.0.html)
-* [deployment-setup-5-5.1.17.0.html](https://asna.github.io/release-notes/2023-03-28-badger/deployment-setup-5-5.1.17.0.html)
+* [deployment-setup-5.1.17.0.html](https://asna.github.io/release-notes/2023-03-28-badger/deployment-setup-5.1.17.0.html)
 
