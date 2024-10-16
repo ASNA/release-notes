@@ -2,6 +2,33 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2024-10-18 Family: oscar-beta 
+* [avr-setup-17.0.37.0.html](https://asna.github.io/release-notes/2024-10-18-oscar-beta/avr-setup-17.0.37.0.html)
+* [browser-terminal-17.0.37.0.html](https://asna.github.io/release-notes/2024-10-18-oscar-beta/browser-terminal-17.0.37.0.html)
+* [dcs-setup-17.0.36.0.html](https://asna.github.io/release-notes/2024-10-18-oscar-beta/dcs-setup-17.0.36.0.html)
+* [dgmonitor-17.0.26.0.html](https://asna.github.io/release-notes/2024-10-18-oscar-beta/dgmonitor-17.0.26.0.html)
+* [dgstudio-17.0.38.0.html](https://asna.github.io/release-notes/2024-10-18-oscar-beta/dgstudio-17.0.38.0.html)
+* [dss-setup-17.0.36.0.html](https://asna.github.io/release-notes/2024-10-18-oscar-beta/dss-setup-17.0.36.0.html)
+* [mobilerpg-setup-11.0.35.0.html](https://asna.github.io/release-notes/2024-10-18-oscar-beta/mobilerpg-setup-11.0.35.0.html)
+* [monarch-nomad-17.0.32.0.html](https://asna.github.io/release-notes/2024-10-18-oscar-beta/monarch-nomad-17.0.32.0.html)
+* [wings-setup-11.0.38.0.html](https://asna.github.io/release-notes/2024-10-18-oscar-beta/wings-setup-11.0.38.0.html)
+
+#### Release date: 2024-10-10 Family: nancy 
+* [avr-setup-16.0.89.0.html](https://asna.github.io/release-notes/2024-10-10-nancy/avr-setup-16.0.89.0.html)
+* [browser-terminal-16.0.89.0.html](https://asna.github.io/release-notes/2024-10-10-nancy/browser-terminal-16.0.89.0.html)
+* [mobilerpg-setup-10.0.93.0.html](https://asna.github.io/release-notes/2024-10-10-nancy/mobilerpg-setup-10.0.93.0.html)
+* [monarch-nomad-16.0.87.0.html](https://asna.github.io/release-notes/2024-10-10-nancy/monarch-nomad-16.0.87.0.html)
+* [monarch-setup-10.0.90.0.html](https://asna.github.io/release-notes/2024-10-10-nancy/monarch-setup-10.0.90.0.html)
+* [synon-escape-10.0.61.0.html](https://asna.github.io/release-notes/2024-10-10-nancy/synon-escape-10.0.61.0.html)
+* [wings-setup-10.0.94.0.html](https://asna.github.io/release-notes/2024-10-10-nancy/wings-setup-10.0.94.0.html)
+
+#### Release date: 2024-10-10 Family: datagate16 
+* [dcs-setup-16.0.88.0.html](https://asna.github.io/release-notes/2024-10-10-datagate16/dcs-setup-16.0.88.0.html)
+* [dg400-16.0.40.0.html](https://asna.github.io/release-notes/2024-10-10-datagate16/dg400-16.0.40.0.html)
+* [dgmonitor-16.0.64.0.html](https://asna.github.io/release-notes/2024-10-10-datagate16/dgmonitor-16.0.64.0.html)
+* [dgstudio-16.0.103.0.html](https://asna.github.io/release-notes/2024-10-10-datagate16/dgstudio-16.0.103.0.html)
+* [dss-setup-16.0.88.0.html](https://asna.github.io/release-notes/2024-10-10-datagate16/dss-setup-16.0.88.0.html)
+
 #### Release date: 2024-10-08 Family: papa 
 * [ecr-setup-4.1.26.0.html](https://asna.github.io/release-notes/2024-10-08-papa/ecr-setup-4.1.26.0.html)
 * [monarch-setup-11.4.43.0.html](https://asna.github.io/release-notes/2024-10-08-papa/monarch-setup-11.4.43.0.html)

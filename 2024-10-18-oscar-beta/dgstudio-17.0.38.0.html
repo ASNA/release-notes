@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ASNA dgstudio | 17.0.38.0</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://nyc3.digitaloceanspaces.com/asna-assets/downloads/assets/release-notes.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">ASNA dgstudio | 17.0.38.0</h1>
+</header>
+<p><img src="https://nyc3.digitaloceanspaces.com/asna-assets/asna-com/home/ASNA-logo.webp" alt="ASNA Logo"/></p>
+<h1 id="datagate-studio-release-notes">DataGate Studio release
+notes</h1>
+<p>Version: 17.0.38.0 - Beta release</p>
+<p>Release date: 2024-10-18</p>
+<hr />
+<p>The DataGate Explorer fulfills a somewhat specialized need, but when
+you do need it it is very handy.</p>
+<p>When you install ASNA Visual RPG on a PC (which needs to have had
+Visual Studio installed prior), the ASNA DataGate Explorer implicitly
+installed in Visual Studio. This lets you work databases, doing such
+things as:</p>
+<ul>
+<li>Create, delete, and modify DataGate Database Names</li>
+<li>Add files, change files, and delete files (including logical
+files)</li>
+<li>Browse file contents</li>
+<li>Import and export database artifacts to DGIE files</li>
+</ul>
+<p>Long-time ASNA users will recognize that these capabilities make the
+ASNA DataGate Explorer analogous to the old COM Database Manager.</p>
+<h2 id="the-datagate-explorers-special-use-case">The DataGate Explorer’s
+special use case</h2>
+<p>Packaging and installing the DataGate Explorer with ASNA Visual is
+great for programmers, but not so much for DB administrators. For
+example, administrators may need to work with databases on Windows
+Server, but don’t want to install (and license) ASNA Visual RPG. To
+resolve this, after installing Visual Studio on the the Windows Server,
+installing ASNA DataGate Studio installs the DataGate Explorer in that
+Visual Studio instance.</p>
+<p>The DataGate Studio does need a license key.</p>
+<p><a href="https://www.asna.com/en/kb/datagate-monitor?monitor">Read
+more about ASNA DataGate monitor.</a></p>
+<h2 id="platform-support">Platform support</h2>
+<p>See the <a
+href="https://www.asna.com/en/support/product-requirements">ASNA Version
+Policy</a> for full requirements</p>
+<blockquote>
+<p>You can only install one version of an ASNA Windows product on a
+single PC. For example, you can’t install ASNA Visual RPG for .NET 17.x
+on a PC on which ASNA Visual RPG for .NET 16.x is installed.</p>
+</blockquote>
+<h2 id="general-installation-tips">General installation tips</h2>
+<ul>
+<li><p>We strongly recommend you apply all pending Windows updates
+before installing any of our Windows products.</p></li>
+<li><p>Don’t install any ASNA Windows products while Visual Studio is
+running.</p></li>
+<li><p>For our products that snap into Visual Studio (ie, Visual RPG for
+.NET Framework, Wings, Mobile RPG, etc.) be sure to install Visual
+Studio first.</p></li>
+</ul>
+<h2 id="downloading-with-microsoft-edge">Downloading with Microsoft
+Edge</h2>
+<p>If this software is downloaded via Edge you may receive a message
+stating that this file “is not commonly downloaded” when attempting to
+install it. In this event click the <strong>View Downloads</strong>
+button, select the ASNA product to install from that list, and confirm
+that you’d like to install it.</p>
+<p>Similarly, attempting to install the software directly through
+Microsoft Windows may cause a “Windows protected your PC” message to
+appear. In this event click the small <code>More Info</code> prompt on
+the left, and click <code>Run Anyway</code> on the following window.</p>
+<hr />
+</body>
+</html>
+<h2 id="SinceVersion">Changes Since Version: 17.0.35.0</h2>
+
+<span class="changeNoteHeading"> Clients - DataGate Controls</span>
+<ul>
+    <li>Case 21738. Import database names command does not overwrite existing names.</li>
+</ul>
+
+<span class="changeNoteHeading"> Clients - DataGate Explorer</span>
+<ul>
+    <li>Case 21741. "Connections" node serialization errors are not displayed.</li>
+</ul>
+
+<span class="changeNoteHeading"> Clients - DataGate Monitor</span>
+<ul>
+    <li>Case 21737. Import database names command fails.</li>
+</ul>
+
+<span class="changeNoteHeading"> QSys - Expo</span>
+<ul>
+    <li>Reuse socket connections between Expo and MonaServer.</li>
+    <li>Exchange Protocol Versions in Handshake with MonaServer.</li>
+    <li>Fix Case 21683: Set on all records the file-level AID Key Response Indicator.</li>
+    <li>Fix file-level function key enabled with Indicator=*NONE.</li>
+    <li>Summary text included a bad link causing 404 on the docs.</li>
+    <li>Reset Format-Level ChangeIndicator and don't set for Hidden fields.</li>
+    <li>Added more 'Hints' to affect how the Barcode detection executes.</li>
+    <li>If AidKey is defined, after Barcode is detected the PushKey will be called.</li>
+</ul>
+<div class="copyright">Copyright © 2024 by ASNA, Inc. All rights reserved</div>

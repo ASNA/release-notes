@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ASNA monarch nomad | 17.0.32.0</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://nyc3.digitaloceanspaces.com/asna-assets/downloads/assets/release-notes.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">ASNA monarch nomad | 17.0.32.0</h1>
+</header>
+<p><img src="https://nyc3.digitaloceanspaces.com/asna-assets/asna-com/home/ASNA-logo.webp" alt="ASNA Logo"/></p>
+<h1 id="asna-monarch-nomad-release-notes">ASNA Monarch Nomad release
+notes</h1>
+<p>Version: 17.0.32.0 - Beta release</p>
+<p>Release date: 2024-10-18</p>
+<hr />
+</body>
+</html>
+<h2 id="SinceVersion">Changes Since Version: 17.0.29.0</h2>
+
+<span class="changeNoteHeading"> Clients - DataGate Controls</span>
+<ul>
+    <li>Case 21738. Import database names command does not overwrite existing names.</li>
+</ul>
+
+<span class="changeNoteHeading"> QSys - DataGate.Client</span>
+<ul>
+    <li>Remove redundant package references.</li>
+    <li>"vulnerable package" warning.</li>
+    <li>Recognize print fields with no data type (like Labels and Shapes).</li>
+    <li>Fix apxClassID array allocation size issue for print fields.</li>
+    <li>Implement CheckFormatID Override for Print Files.</li>
+    <li>Generate default XML docs file so it packs.</li>
+    <li>Delay Checking Print File Format IDs.</li>
+</ul>
+
+
+<span class="changeNoteHeading"> QSys - Expo</span>
+<ul>
+    <li>Reuse socket connections between Expo and MonaServer.</li>
+    <li>Exchange Protocol Versions in Handshake with MonaServer.</li>
+    <li>Fix Case 21683: Set on all records the file-level AID Key Response Indicator.</li>
+    <li>Fix file-level function key enabled with Indicator=*NONE.</li>
+    <li>Summary text included a bad link causing 404 on the docs.</li>
+    <li>Reset Format-Level ChangeIndicator and don't set for Hidden fields.</li>
+    <li>Added more 'Hints' to affect how the Barcode detection executes.</li>
+    <li>If AidKey is defined, after Barcode is detected the PushKey will be called.</li>
+</ul>
+
+<span class="changeNoteHeading"> QSys - Runtime</span>
+<ul>
+    <li>Fix Case 21661 and Implement Copy Spooled File.</li>
+    <li>Reuse socket connections between Expo and MonaServer.</li>
+    <li>Under certain circumstances a fixed-size field would not be fully initialized before accessing its properites.</li>
+    <li>Bug fixes to MOVE and MOVEARR.</li>
+    <li>Added missing TestTime extension method for FixedString.</li>
+    <li>Added missing Sum methods for various kinds of Fixed Size arrays. Fixed bug in Initializing arrays to a value when the value is not quite the right type (eg short array initialized with an int).</li>
+    <li>Add Database.StartTpm method that receives an out Indicator error parameter.</li>
+    <li>Fixed crash in casting when MOVEARR has as arguments fixed decimal arrays of the same element type.</li>
+    <li>Allow explicit cast from Indicator to string.</li>
+</ul>
+<div class="copyright">Copyright © 2024 by ASNA, Inc. All rights reserved</div>
