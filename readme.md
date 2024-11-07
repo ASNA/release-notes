@@ -2,6 +2,19 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2024-11-07 Family: nancy-beta 
+* [avr-setup-16.0.90.0.html](https://asna.github.io/release-notes/2024-11-07-nancy-beta/avr-setup-16.0.90.0.html)
+* [browser-terminal-16.0.90.0.html](https://asna.github.io/release-notes/2024-11-07-nancy-beta/browser-terminal-16.0.90.0.html)
+* [dcs-setup-16.0.89.0.html](https://asna.github.io/release-notes/2024-11-07-nancy-beta/dcs-setup-16.0.89.0.html)
+* [dgmonitor-16.0.65.0.html](https://asna.github.io/release-notes/2024-11-07-nancy-beta/dgmonitor-16.0.65.0.html)
+* [dgstudio-16.0.104.0.html](https://asna.github.io/release-notes/2024-11-07-nancy-beta/dgstudio-16.0.104.0.html)
+* [dss-setup-16.0.89.0.html](https://asna.github.io/release-notes/2024-11-07-nancy-beta/dss-setup-16.0.89.0.html)
+* [mobilerpg-setup-10.0.94.0.html](https://asna.github.io/release-notes/2024-11-07-nancy-beta/mobilerpg-setup-10.0.94.0.html)
+* [monarch-nomad-16.0.88.0.html](https://asna.github.io/release-notes/2024-11-07-nancy-beta/monarch-nomad-16.0.88.0.html)
+* [monarch-setup-10.0.91.0.html](https://asna.github.io/release-notes/2024-11-07-nancy-beta/monarch-setup-10.0.91.0.html)
+* [synon-escape-10.0.62.0.html](https://asna.github.io/release-notes/2024-11-07-nancy-beta/synon-escape-10.0.62.0.html)
+* [wings-setup-10.0.95.0.html](https://asna.github.io/release-notes/2024-11-07-nancy-beta/wings-setup-10.0.95.0.html)
+
 #### Release date: 2024-10-21 Family: papa 
 * [ecr-setup-4.1.27.0.html](https://asna.github.io/release-notes/2024-10-21-papa/ecr-setup-4.1.27.0.html)
 * [monarch-setup-11.4.43.0.html](https://asna.github.io/release-notes/2024-10-21-papa/monarch-setup-11.4.43.0.html)
