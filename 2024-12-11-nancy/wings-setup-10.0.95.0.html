@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ASNA wings-setup | 10.0.95.0</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://nyc3.digitaloceanspaces.com/asna-assets/downloads/assets/release-notes.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">ASNA wings-setup | 10.0.95.0</h1>
+</header>
+<p><img src="https://nyc3.digitaloceanspaces.com/asna-assets/asna-com/home/ASNA-logo.webp" alt="ASNA Logo"/></p>
+<h1 id="asna-wings-release-notes">ASNA Wings release notes</h1>
+<p>Version: 10.0.95.0 - Generally Available (for production environments)</p>
+<p>Release date: 2024-12-11</p>
+<p>See the <a href="#platforms">Software Requirements section below</a>
+for platform support.</p>
+<blockquote>
+<p>If you are upgrading from an earlier version of Wings, you may be
+effected by the changes to the ASNA Runtime (see <strong>ASNA Runtime
+Changes</strong> below).</p>
+</blockquote>
+<blockquote>
+<p>Be sure to read about the IBM i System Value requirements below.</p>
+</blockquote>
+<blockquote>
+<p>Ensure neither Visual Studio, its installation, nor any Visual Studio
+update is running at the time of Wings installation, as it may cause
+conflicts.</p>
+</blockquote>
+<h2
+id="special-action-required-when-updating-.net-aka-.net-core">Special
+action required when updating .NET (aka .NET Core)</h2>
+<p>The following notice is for customers using Wings 11.0 to produce
+Razor pages. It does not apply to customers using Wings 11.0 with .NET
+Framework’s WebForms.</p>
+<p>If you update .NET (aka .NET Core) you need to uninstall/reinstall
+Encore 4.0, and Cocoon 11.4, and Wings 11.0 if they are installed. NET
+can be updated directly or through a Visual Studio update. We require
+this because in order for the SDK to resolve properly and the templates
+to be available to all users, we must install certain files to versioned
+<code>dotnet</code> directories (currently
+<code>C:\Program Files\dotnet\sdk\[version]</code> and
+<code>C:\Program Files\dotnet\templates\[version])</code>. When the
+repair is performed, we re-install these components to the updated
+version directories.</p>
+<h2 id="installation-notes">Installation Notes</h2>
+<p>Only one installation of Visual RPG, Windows Deployment, or DataGate
+WebPak may be installed on a single machine. The Windows Deployment and
+WebPak components are subsets of what is contained in the AVR
+installation package.</p>
+<p>ASNA Wings is composed of several items, some of them are used
+exclusively at design time, others at design and run time, there are
+items installed on the Windows machines and there are others installed
+on the IBM i.</p>
+<p>These are the ASNA components used at design time:</p>
+<ul>
+<li>Wings Design Aid 10.0 (WDA). The WDA package includes DataGate
+client, Terminal Emulation support, Wings support and Visual RPG
+support.</li>
+<li>DataGate 16.0 for IBM i (includes the Wings Handler).</li>
+<li>ASNA Monarch Collector 3.1.</li>
+</ul>
+<p>For run time, the ASNA components needed are:</p>
+<ul>
+<li>DataGate WebPak (includes DataGate client, Terminal Emulation
+support, Wings support and Visual RPG support)</li>
+<li>DataGate 17.0 for IBM i (includes the Wings Handler)</li>
+</ul>
+<p>The download packages on this page include the components for WDA,
+Monarch Collector and WebPak. The downloadable package for DataGate 16.0
+for IBM i can be found <a
+href="https://asna.com/us/tech/downloads">here</a>.</p>
+<h3
+id="considerations-for-10.09.0-side-by-side-installations">Considerations
+for 10.0/9.0 side-by-side installations</h3>
+<p>Wings 10.0 is able to coexist with Wings 9.0 but earlier versions are
+not supported. Installing Wings 10.0 on a machine with Wings 9.0 will
+upgrade the runtime components (DG Client, Monarch Controls, AVR
+Runtime) to the level required by Wings 10.0. Both versions of Wings on
+the machine will remain usable for development purposes, but any
+assembly created by either will <strong>require</strong> Wings 10.0
+Deployment or WebPak when put into production.</p>
+<p>To avoid potentially serious errors, be certain to update to the
+latest version of the older family before installing the newer
+family.</p>
+<h3 id="silent-installation-process">Silent Installation Process</h3>
+<p>Wings supports silent installations. See the Installation section of
+the <a
+href="https://docs.asna.com/documentation/Help160/Readmes/Wings_100_Readme.htm">Readme</a>
+file for more detail.</p>
+<p>{% include ‘dot-net-runtime-changes.md’%}</p>
+<h3 id="licenses-needed-for-asna-wings">Licenses Needed for ASNA
+Wings</h3>
+<p>ASNA Wings requires license keys on the Windows and IBM i
+machines.</p>
+<p>On the developer Windows machine apply these license keys (Using the
+Registration Assistant):</p>
+<ul>
+<li>Wings Design Aid 10.0 (Look under Monarch on the Registration
+Assistant tree)</li>
+</ul>
+<p>On the IBM i apply these license keys:</p>
+<ul>
+<li>DataGate 16.0 for IBM i [ use the ==&gt;
+<em>DG8installationLibrary</em>/REGISTER LICENSE(*SRVR) command ]</li>
+<li>Wings Handler [ use the ==&gt;
+<em>DG8installationLibrary</em>/REGISTER LICENSE(*WNGS) command ]</li>
+</ul>
+<h3 id="limitations-of-10.0">Limitations of 10.0</h3>
+<p>This version of Wings has the following limitations:</p>
+<ul>
+<li>Do not install ASNA Wings 10.0 on a machine which has installed AVR
+or DG versions of 6.2 or earlier. Wings 10.0 can coexist with versions
+in the 16.0/10.0 family.</li>
+</ul>
+<h3 id="required-ibm-i-configuration-for-wings">Required IBM i
+configuration for Wings</h3>
+<p>Display files imported with the Wings Design Aid run in batch mode on
+the IBM i and require no specific SYSVAL settings. However, virtually
+all Wings installations will need to use the ASNA Terminal Emulator.
+Using the Emulator with Wings requires these IBM i SYSVAL settings:</p>
+<blockquote>
+<ul>
+<li>QMLTTHDACN: <strong>1</strong> or <strong>2</strong></li>
+<li>QRMTSIGN: *<strong>VERIFY</strong></li>
+</ul>
+</blockquote>
+<h3
+id="limitations-of-ibm-rational-open-access---rpg-edition">Limitations
+of IBM Rational Open Access - RPG Edition</h3>
+<ul>
+<li><p>The IBM i Open Access Handler limits language support ILE RPG
+(RPGIV) only. All other languages are excluded at this time, including
+CL.</p></li>
+<li><p>An Open-Access file cannot be a program-described WORKSTN
+file.</p></li>
+</ul>
+<blockquote>
+<p>For more details, please see Chapter 6 in the document link
+below:</p>
+<p><a
+href="https://www.ibm.com/developerworks/mydeveloperworks/wikis/form/anonymous/api/library/01071083a0-b012-4248-10d0c-33ef810a6c3dd/document/88ce10ecc-1e14-4044-10c50-fc107700371d7/attachment/18aba10c1-7253-4de4-a534-f28e486de2e3/media/open_access_rpg_edition_5733OAR_20">https://www.ibm.com/developerworks/mydeveloperworks/wikis/form/anonymous/api/library/01071083a0-b012-4248-10d0c-33ef810a6c3dd/document/88ce10ecc-1e14-4044-10c50-fc107700371d7/attachment/18aba10c1-7253-4de4-a534-f28e486de2e3/media/open_access_rpg_edition_5733OAR_2010_08_23.pdf</a></p>
+</blockquote>
+<h4 id="differences-in-format-level-identifiers">Differences in Format
+Level Identifiers</h4>
+<p>There are several display file features that are handled differently
+in Wings than on the IBM i with respect to the layout of certain fields
+in record formats, this differences cause the Format Level Identifiers
+used in Level Checks to be different for files exported by Wings and
+those created directly from pure DDS. The normal development cycle for
+Wings ensures that these differences do not cause any problems. This
+cycle follows these steps:</p>
+<ol type="1">
+<li>Import Display File DDS into Visual Studio</li>
+<li>Optionally make modifications to the ASPX file created</li>
+<li>Export the ASPX back to the IBM i onto a library for Wings exported
+Display Files</li>
+<li>Add the HANDLER keyword to the RPG ILE program that will use the new
+ASPX as a workstation file</li>
+<li>Compile the RPG ILE program ensuring the exported Display Files
+library is found first in the library list by the RPG compiler</li>
+</ol>
+<p>Some of the DDS features that cause Wings to generate different
+Format Level Identifiers are:</p>
+<ul>
+<li>The usage of fields for row/col on the WINDOW keyword.</li>
+<li>Using a field for the WNDTITLE keyword.</li>
+<li>On Subfile Controller formats used on message subfiles, using the
+SFLPGMQ keyword on a field other than the first one of the format.</li>
+</ul>
+<h2 id="platform-support">Platform support</h2>
+<p>See the <a
+href="https://www.asna.com/en/support/product-requirements">ASNA Version
+Policy</a> for full requirements</p>
+<blockquote>
+<p>You can only install one version of an ASNA Windows product on a
+single PC. For example, you can’t install ASNA Visual RPG for .NET 17.x
+on a PC on which ASNA Visual RPG for .NET 16.x is installed.</p>
+</blockquote>
+<h2 id="general-installation-tips">General installation tips</h2>
+<ul>
+<li><p>We strongly recommend you apply all pending Windows updates
+before installing any of our Windows products.</p></li>
+<li><p>Don’t install any ASNA Windows products while Visual Studio is
+running.</p></li>
+<li><p>For our products that snap into Visual Studio (ie, Visual RPG for
+.NET Framework, Wings, Mobile RPG, etc.) be sure to install Visual
+Studio first.</p></li>
+</ul>
+<h2 id="visual-studio-2022-editions">Visual Studio 2022 Editions</h2>
+<p>Visual Studio 2022 17.4 or higher Professional or Enterprise edition
+is required with the Papa family.</p>
+<h2 id="visual-studio-local-help-installation">Visual Studio local help
+installation</h2>
+<p>Visual Studio 2022 treats local (offline) as an optional component.
+As such installing it requires <a
+href="https://docs.asna.com/documentation/Help150/Readmes/Help150VisualStudioWorkloads.htm">some
+additional steps</a>:</p>
+<p>When installing Visual Studio 2019:</p>
+<ol type="1">
+<li>Under the Individual Components tab.</li>
+<li>On the Code Tools section.</li>
+<li>Enable the Help Viewer component.</li>
+</ol>
+<p>To verify the Help Viewer is installed, look at the top of the Help
+Menu in Visual Studio. The following three options should be visible at
+the top of the menu:</p>
+<ol type="1">
+<li>View Help</li>
+<li>Add and Remove Help Content</li>
+<li>Set Help Preferences</li>
+</ol>
+<h2 id="asna-runtime-changes">ASNA Runtime Changes</h2>
+<p>Starting with the version 15.0 of the ASNA family of .NET products
+two changes were introduced to some ASNA DLLs. If you are upgrading to
+15.x or higher from a previous release ASNA family release the following
+may apply to you.</p>
+<h3 id="asna.visualrpg.runtime.dll-expands-into-three-new-dlls">1.
+ASNA.VisualRPG.Runtime.DLL expands into three new DLLs</h3>
+<p>The first change is that ASNA.VisualRPG.Runtime.DLL expands into
+three new DLLS: * ASNA.Runtime.DLL * ASNA.Runtime.Support.DLL *
+ASNA.Runtime.Monarch.DLL</p>
+<p>This increased granularity was made to better match library
+improvements and DLL changes to the various ASNA products that use them.
+The details of this three-way split are shown below in Figure 1.</p>
+<figure>
+<img
+src="https://nyc3.digitaloceanspaces.com/asna-assets/images/version15.x-dll-changes.png"
+alt="DLL changes introduced with ASNA Visual RPG for .NET Framework 15" />
+<figcaption aria-hidden="true">DLL changes introduced with ASNA Visual
+RPG for .NET Framework 15</figcaption>
+</figure>
+<p>In Figure 1 above the namespaces each DLL provides are shown prefixed
+with {}. They are:</p>
+<ul>
+<li>ASNA.Monarch</li>
+<li>ASNA.Monarch.Wings</li>
+<li>ASNA.Runtime</li>
+<li>ASNA.VisualRPG.Runtime</li>
+</ul>
+<p>You can see that although ASNA.VisualRPG.Runtime.dll has been split
+into three DLLs the same namespaces are provided in the new DLLs. The
+version 15.x DLLs also provided a few new additional namespaces beyond
+what’s shown in Figure 1.</p>
+<blockquote>
+<p>To maintain backwards compatibility of version 15.0 with previous
+versions we ship an <code>ASNA.VisualRPG.Runtime.dll</code> library
+which forwards requests for any of the four original namespaces that
+where in that DLL to the corresponding new DLL. We will stop shipping
+the <code>ASNA.VisualRPG.Runtime.dll</code> with the next major version
+of ASNA .NET products. This forwarding version of this DLL will be
+available as a separate download.</p>
+</blockquote>
+<h3 id="asna.visualrpg.common.sgml.dll-has-been-deprecated.">2.
+ASNA.VisualRPG.Common.Sgml.dll has been deprecated.</h3>
+<p>The second change is that <code>ASNA.VisualRPG.Common.Sgml.dll</code>
+has been deprecated and its code has been moved to
+<code>ASNA.Runtime.dll</code>. This change mostly affects customers
+using Mobile RPG and Wings.</p>
+<h3 id="changes-you-need-to-make-because-of-these-dll-changes">Changes
+you need to make because of these DLL changes</h3>
+<blockquote>
+<p>There are <em>no</em> coding changes you need to make in your
+projects because of these changes. The only changes you need to make is
+adding and/or deleting references. For new 15.x projects the correct
+project references will already exist.</p>
+</blockquote>
+<ul>
+<li>For <strong>all project types</strong>:
+<ul>
+<li>Remove references to
+<code>ASNA.VisualRPG.Common.Sgml.dll</code></li>
+</ul></li>
+</ul>
+<p>In addition to removing that reference:</p>
+<ul>
+<li>For <strong>Visual RPG Windows and Web projects</strong>:
+<ul>
+<li>Remove the reference to <code>ASNA.VisualRPG.Runtime.dll</code></li>
+<li>Add a reference to <code>ASNA.Runtime.dll</code></li>
+</ul></li>
+<li>For <strong>Wings</strong> and <strong>MobileRPG</strong> projects:
+<ul>
+<li>Remove the reference to <code>ASNA.VisualRPG.Runtime.dll</code></li>
+<li>Add a reference to <code>ASNA.Runtime.dll</code></li>
+<li>Add a reference to <code>ASNA.Runtime.JobSupport.dll</code></li>
+</ul></li>
+<li>For <strong>Monarch</strong> projects:
+<ul>
+<li>Remove the reference to <code>ASNA.VisualRPG.Runtime.dll</code></li>
+<li>Add a reference to <code>ASNA.Runtime.dll</code></li>
+<li>Add a reference to <code>ASNA.Runtime.JobSupport.dll</code></li>
+<li>Add a reference to <code>ASNA.Runtime.Monarch.dll</code></li>
+</ul></li>
+</ul>
+<p>The ASNA.Runtime.* DLLS are located at:</p>
+<pre><code>C:\Program Files (x86)\Common Files\ASNA Shared\Client\xx</code></pre>
+<p>where xx is the ASNA Visual RPG version number.</p>
+<p>For more details on the runtime changes click <a
+href="https://docs.asna.com/documentation/Help150/Readmes/ASNARuntimeChanges.htm">here</a>.</p>
+<h2 id="secure-sockets-layer-ssl">Secure Sockets Layer (SSL)</h2>
+<p>The DataGate client software contained in this release significantly
+changes the way Secure Sockets Layer (SSL) connections are configured.
+DataGate SSL support was introduced in Version 15 as an option for
+secure network communications between DataGate clients and servers.</p>
+<p>In prior releases, DataGate client connection configurations, by
+default, specified an SSL-enabled connection. This allowed many users to
+enhance the security of their applications by simply installing the new,
+SSL supporting DataGate release. Unfortunately, other customers
+experienced connection and security issues due to shifting standards and
+evolving platform infrastructure supporting SSL, as offered by Windows
+and IBM i.</p>
+<p>In this release, DataGate client users must now “opt-in” when
+configuring new connections secured with SSL. When a new connection
+configuration is created, the default setting is to specify a non-SSL,
+or “clear-text” connection to the server.</p>
+<p>DataGate connections are typically configured as “database names”. A
+database name is a collection of properties defining all the information
+needed to connect to a DataGate server from the client computer.
+Existing database names are not affected by this change, but new
+database names are affected:</p>
+<p>Database names created by prior releases retain the same SSL
+configuration as they had when created or modified.</p>
+<p>The default configuration of new database names will specify non-SSL
+connections.</p>
+<h3 id="creating-ssl-enabled-database-names">Creating SSL-Enabled
+Database Names</h3>
+<p>Online documentation linked below fully details the process of
+creating an SSL-enabled database name configuration using DataGate
+Studio. The process is very similar for users of DataGate Monitor.</p>
+<p><a
+href="https://docs.asna.com/documentation/Help150/DataGate/SSL/_HTML/DataGateSSLClient.htm">Read
+more about DataGate’s SSL support</a></p>
+<h3 id="other-datagate-ssl-options">Other DataGate SSL Options</h3>
+<p>DataGate offers many options for enhancing the security of its
+client/server connection with SSL. For full details of options available
+for both the client and server, please <a
+href="https://docs.asna.com/documentation/Help150/DataGate/SSL/_Helphome.htm">consult
+the online documentation.</a></p>
+<h3 id="configuring-datagate-connections-programmatically">Configuring
+DataGate Connections Programmatically</h3>
+<p>Connection configurations are represented in DataGate as instances of
+the SourceProfile class in the DataGate .NET API. While most users and
+applications will configure connections via database names, some
+programs use the DataGate API directly.</p>
+<p>Users of the SourceProfile class are advised that the changes in this
+release may represent a <strong>breaking change</strong> to the behavior
+of your programs. The default value of the SourceProfile.SslOptions
+property is now SslOptions.None; in previous releases the default value
+was SslOptions.Request. If your program does not explicitly set this
+property, connections made with the SourceProfile instances you create
+will be clear-text, rather than SSL-enabled.</p>
+<p>If you directly create and use SourceProfile instances in your
+programs, ASNA highly recommends modifying them to explicitly set
+SourceProfile.SslOptions before deploying this DataGate release.</p>
+<h3 id="database-name-migration-from-non-ssl-releases">Database Name
+Migration From Non-SSL Releases</h3>
+<p>Database names created by DataGate releases prior to Version 15 do
+not contain SSL-related configuration information. When these database
+names are read by Version 15 software, the configuration is migrated to
+include SSL configuration options. Prior to this release, those
+migrations would enable SSL connections, unless otherwise explicitly
+changed by the user. Henceforth, automatic database name migrations will
+disable SSL in the connections they represent.</p>
+<p>Users who deploy applications using the database names contained in
+configuration files created with prior, non-SSL supported DataGate
+releases are advised that changes in this release may represent a
+<strong>breaking change</strong> in this deployment strategy, for
+reasons outlined in the previous paragraph.</p>
+<h2 id="supported-web-browsers-smartphones-and-tablets">Supported Web
+browsers, smartphones, and tablets</h2>
+<p>Please see <a
+href="https://www.asna.com/en/kb/browsers-supported">this asna.com
+article</a> for ASNA’s browser and mobile client support.</p>
+<h2 id="downloading-with-microsoft-edge">Downloading with Microsoft
+Edge</h2>
+<p>If this software is downloaded via Edge you may receive a message
+stating that this file “is not commonly downloaded” when attempting to
+install it. In this event click the <strong>View Downloads</strong>
+button, select the ASNA product to install from that list, and confirm
+that you’d like to install it.</p>
+<p>Similarly, attempting to install the software directly through
+Microsoft Windows may cause a “Windows protected your PC” message to
+appear. In this event click the small <code>More Info</code> prompt on
+the left, and click <code>Run Anyway</code> on the following window.</p>
+<hr />
+</body>
+</html>
+<h2 id="SinceVersion">Changes Since Version: 10.0.94.0</h2>
+
+<span class="changeNoteHeading"> Clients - DataGate Controls</span>
+<ul>
+    <li>Case 21738. Import Database Names Command does not overwrite existing names.</li>
+</ul>
+
+<span class="changeNoteHeading"> Clients - DataGate Explorer</span>
+<ul>
+    <li>Case 21741. "Connections" Node Serialization Errors Are Not Displayed.</li>
+</ul>
+
+<span class="changeNoteHeading"> Clients - DataGate Monitor</span>
+<ul>
+    <li>Case 21737. Import Database Names Command Fails.</li>
+</ul>
+<div class="copyright">Copyright © 2024 by ASNA, Inc. All rights reserved</div>
