@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ASNA ecr-setup | 4.1.34.0</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://nyc3.digitaloceanspaces.com/asna-assets/downloads/assets/release-notes.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">ASNA ecr-setup | 4.1.34.0</h1>
+</header>
+<p><a
+href="https://asna.com"><img src="https://nyc3.digitaloceanspaces.com/asna-assets/asna-com/home/ASNA-logo.webp" alt="ASNA Logo"/></a></p>
+<h1 id="asna-encore-release-notes">ASNA Encore release notes</h1>
+<p>Version: 4.1.34.0 - Beta release</p>
+<p>Release date: 2025-02-14</p>
+<hr />
+<h2 id="net-aka-.net-core-and-visual-studio">.NET (aka .NET Core) and
+Visual Studio</h2>
+<p>ASNA Encore 4.1.8.0+ and ASNA Monarch 11.4.34.0+ provide .NET 8
+support.</p>
+<ul>
+<li>Minimum .NET version: .NET 6</li>
+<li>Minimum Visual Studio: Visual Studio 2022 build: 17.8</li>
+</ul>
+<h2 id="platform-support">Platform support</h2>
+<p>See the <a
+href="https://www.asna.com/en/support/product-requirements">ASNA Version
+Policy</a> for full requirements</p>
+<blockquote>
+<p>You can only install one version of an ASNA Windows product on a
+single PC. For example, you can’t install ASNA Visual RPG for .NET 17.0
+on a PC on which ASNA Visual RPG for .NET 16.0 is installed.</p>
+</blockquote>
+<h2 id="general-installation-tips">General installation tips</h2>
+<ul>
+<li><p>We strongly recommend you apply all pending Windows updates
+before installing any of our Windows products.</p></li>
+<li><p>Don’t install any ASNA Windows products while Visual Studio is
+running.</p></li>
+<li><p>For our products that snap into Visual Studio (ie, Visual RPG for
+.NET Framework, Wings, Mobile RPG, etc.) be sure to install Visual
+Studio first.</p></li>
+</ul>
+<h2 id="visual-studio-2022-editions">Visual Studio 2022 Editions</h2>
+<p>Visual Studio 2022 17.4 or higher Professional or Enterprise edition
+is required with the Papa family.</p>
+<h2 id="visual-studio-local-help-installation">Visual Studio local help
+installation</h2>
+<p>Visual Studio 2022 treats local (offline) as an optional component.
+As such installing it requires <a
+href="https://docs.asna.com/documentation/Help150/Readmes/Help150VisualStudioWorkloads.htm">some
+additional steps</a>:</p>
+<p>When installing Visual Studio 2019:</p>
+<ol type="1">
+<li>Under the Individual Components tab.</li>
+<li>On the Code Tools section.</li>
+<li>Enable the Help Viewer component.</li>
+</ol>
+<p>To verify the Help Viewer is installed, look at the top of the Help
+Menu in Visual Studio. The following three options should be visible at
+the top of the menu:</p>
+<ol type="1">
+<li>View Help</li>
+<li>Add and Remove Help Content</li>
+<li>Set Help Preferences</li>
+</ol>
+<hr />
+</body>
+</html>
+<h2 id="SinceVersion">Changes Since Version: 4.1.27.0</h2>
+
+<span class="changeNoteHeading"> QSys - DataGate.Client </span>
+<ul>
+    <li>Fixes for linux-based testing.</li>
+    <li>Add mitigation package reference, update to recent stable packages, and require mitigation SDKs</li>
+    <li>Implement new IMetadataCacheService.</li>
+    <li>Metadata service, net48, & non-Windows printing.</li>
+    <li>Don't allow Windows to index cache artifacts.</li>
+    <li>Always strong-name sign netfx assemblies.</li>
+</ul>
+
+<span class="changeNoteHeading"> QSys - Expo </span>
+<ul>
+    <li>Package reference updates</li>
+    <li>Update nuspec to match project references.</li>
+</ul>
+
+<span class="changeNoteHeading"> QSys - Runtime</span>
+<ul>
+    <li>Allow explicit cast from Indicator to string.</li>
+    <li>Implemented support for 'RETURN &lt;value&gt;' from a nested subroutine in a subprocedure.</li>
+    <li>Fixed bug when setting string values shorter or longer than the available space.</li>
+    <li>Fixed bug in SetValue always throwing an exception.</li>
+    <li>Fixed bug in GetString when given length was longer than DS buffer.</li>
+</ul>
+
+<span class="changeNoteHeading"> RnD - Encore Compiler</span>
+<ul>
+    <li>Issue proper name for *ENTRY (instead of '?ENTRY') in error message.</li>
+    <li>Fixed grammar for CASE. It was not detecting properly when a CASE came after a CASEDFT.</li>
+    <li>Fixed bug in %DATE when the argument is an integer.</li>
+    <li>Fixed bug in %KDS thinking that the DS fields were localscope.</li>
+    <li>Allow comparison between bool and declared constant strings in relops and when using COMPARE.</li>
+    <li>Issue 'divisiion by zero' error when using a constant 0 in a division expression.</li>
+    <li>Fixed: Error messages while creating nodes at parsing time were being lost.</li>
+    <li>ENUM was throwing when trying to add a blank line.</li>
+    <li>Validate DIM is at most 99999.</li>
+    <li>Allow comparisons between booleans and strings.</li>
+    <li>Validate that RnmFlds new field names are actual names in the program.</li>
+    <li>Ensure COMPARE works for booleans and indicators.</li>
+    <li>Fixed bug in parameters when Trekker calls XFU converter, it was missing letting tool know to use the Trekker tables.</li>
+    <li>Fixed ToString method for array types so it distiguishes between DIM arrays and RANK arrays.</li>
+    <li>Initialize local temp variables to their default value according to type.</li>
+    <li>Fix the grammar to allow blank lines and comments in between case conditions.</li>
+    <li>Remove vestiges of non-Encore commands: Beep, ExitApp, DclEvent, DclRecordFormat, DclRecordFld.</li>
+    <li>Fixed bug in type of exception thrown for a nested subroutine with a RETURN in a procedure.</li>
+    <li>Initial changes to support RETURN from nested subroutine in a subprocedure: translate RETURN &lt;value&gt; as a throw new SubroutineReturn 'exception' to be trapped by the subrpocedure.</li>
+    <li>Implemented support for 'RETURN &lt;value&gt;' from a nested subroutine in a subprocedure.</li>
+    <li>Renamed `GetOldStyleLength` to `GetInMemoryLength` in AVRTypesScalars.cs and CommandsDS.cs for clarity.</li>
+    <li>Enhanced `TypeCheckAndTranslate` in BuiltinFunctions.cs to handle more cases, improved type checking, and refactored to use a switch statement.</li>
+    <li>Simplified `GenerateSource` method in BuiltinFunctions.cs.</li>
+    <li>Updated `GetAsInt` method in BuiltinFunctions.cs to use discards and handle types more effectively.</li>
+    <li>Added `DoLen` method in ExpressionsOperators.cs for length calculations.</li>
+    <li>Updated `GenerateSource` in CommandsDeclare.cs to use `TheValueNode`.</li>
+    <li>Added new error messages to TranslatorMsgs.txt for `%SIZE` and type length calculations.</li>
+    <li>Ensure default output type is library, both in Encore and in Trekker.</li>
+</ul>
+
+<span class="changeNoteHeading"> RnD - Encore IDE </span>
+<ul>
+    <li>Get update system.text.json and remediate updated analyzer warnings.</li>
+    <li>Guard against recursive base class reference.</li>
+    <li>Update minimum install targets to 17.8.</li>
+    <li>Support LIKE keyword.</li>
+    <li>Enable config-based secondary dbname file.</li>
+    <li>Fixes for literal value parsing &amp; rendering, metadata operator overloading, support exponentiation operator.</li>
+</ul>
+
+<span class="changeNoteHeading"> RnD - Encore SDK </span>
+<ul>
+    <li>Update MSbuild packages.</li>
+    <li>Add pdbFixer for net 8.</li>
+    <li>Enable DG filedef caching option in Erc.</li>
+    <li>Add file definition cache as an Erc output.</li>
+    <li>Define an explicit DATEDIT default value.</li>
+</ul>
+<div class="copyright">Copyright © 2025 by ASNA, Inc. All rights reserved</div>
