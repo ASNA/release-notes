@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ASNA monarch-setup | 11.4.43.0</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://nyc3.digitaloceanspaces.com/asna-assets/downloads/assets/release-notes.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">ASNA monarch-setup | 11.4.43.0</h1>
+</header>
+<p><a
+href="https://asna.com"><img src="https://nyc3.digitaloceanspaces.com/asna-assets/asna-com/home/ASNA-logo.webp" alt="ASNA Logo"/></a></p>
+<h1 id="asna-monarch-release-notes">ASNA Monarch release notes</h1>
+<p>Version: 11.4.43.0 - Generally Available (for production environments)</p>
+<p>Release date: 2025-02-28</p>
+<hr />
+<h2 id="important-notices">Important notices</h2>
+<blockquote>
+<p>If upgrading from an earlier version please obtain a new license code
+from ASNA after installation.</p>
+</blockquote>
+<h2 id="whats-new">What’s New</h2>
+<ul>
+<li>Enhanced support for Free Format RPG</li>
+<li>Procedure-scoped field and DS declaration.</li>
+<li>NOMAIN modules</li>
+<li>Enhanced Embedded SQL Support</li>
+<li>INCLUDE CL command</li>
+<li>Ability to Rename Fields and Subroutines (including converting
+procedures that are not external to simplified subroutines)</li>
+<li>INFDS “status” support</li>
+<li>Optimized Data Agent, including enhanced support for multi-member
+files</li>
+</ul>
+<h2 id="datagate-studio-and-datagate-monitor">DataGate Studio and
+DataGate Monitor</h2>
+<ul>
+<li>Export/import of Database Name config files with secure, two-factor
+encryption for deployments.</li>
+</ul>
+<h2 id="datagate-client">DataGate Client</h2>
+<ul>
+<li>Support runtime elimination of clear-text passwords via .NET
+SecureString.</li>
+<li>Encrypted local storage of Database Name connection details.</li>
+<li>*DOMAIN authentication enhancements (“Negotiate” protocol support,
+to eliminate “NTLM” from Active Directory networks).</li>
+<li>IPV6 support (server-only enhancement, all past &amp; present .NET
+DG clients can take advantage of this).</li>
+</ul>
+<h2 id="web-controls">Web Controls</h2>
+<ul>
+<li>New Calendar with more modern look (for DDS date fields)</li>
+</ul>
+<h2 id="known-issues">Known Issues</h2>
+<h3 id="datagate-studio">DataGate Studio</h3>
+<ul>
+<li>File definition wizard for SQL Logical files crashes Visual Studio.
+Workaround: The crash can be avoided if DataGate Explorer connections
+used in the wizard dialogs are first opened in the DataGate Explorer
+window.</li>
+<li>New connections are not found by DataGate Studio controls.
+Workaround: To avoid this error, restart the DG Studio IDE before using
+newly-added connections.</li>
+<li>DataGate File Definition Projects: The “New -&gt; Project…” command
+is changed in Visual Studio 2019 with a wizard-like dialog, allowing you
+to filter languages, platforms, and other criteria. In this release,
+DataGate projects are not listed as available project types via the
+filter drop-down selection mechanism.<br />
+To access DataGate projects, enter the word “DataGate” in the search box
+to the right of the “Create a new project” banner on the dialog
+page.<br />
+The available Datagate project templates (possibly among other
+irrelevant templates) should appear in the list below the filter
+selections.<br />
+Select the DataGate template of choice and click “Next”.</li>
+</ul>
+<h3 id="web-controls-1">Web Controls</h3>
+<ul>
+<li>A Monarch Display File with a subfile where DblClickTargetValue
+DdsSubfileControl’s property is used on a field indicated by
+dblClickTargetField where the corresponding subfile field is of
+InputStyle=“CheckBox” does not get its CheckedValue when the record in
+the subfile is double-clicked.</li>
+</ul>
+<h2 id="shared-components">Shared components</h2>
+<p>ASNA Monarch 10.0, ASNA Wings 10.0 and ASNA Mobile RPG 10.0 share
+some components to produce their user interface. These components are
+distributed with AVR and WebPak 16.0. The shared components are:</p>
+<ul>
+<li>The Monarch Server Controls (i.e.: DdsRecord, DdsCharField, DdsChart
+…)</li>
+<li>The ASNA 5250 Terminal Emulator</li>
+</ul>
+<h3 id="installation-notes">Installation Notes</h3>
+<p>Monarch 10.0 can be installed on a machine with the previous version
+(Monarch 9.0) if so desired. Any earlier products may cause conflicts if
+you have installed other ASNA products from our 14.0 and 8.0 product
+families (e.g. Visual RPG 14.0, Wings 8.0), please remove them prior to
+installation, or upgrade them before or after upgrading to Monarch
+10.0.</p>
+<p>ASNA Monarch 10.0 may be installed as a stand-alone product, or it
+may be installed along side ASNA Visual RPG 16.0. ASNA Monarch 10.0 is
+not compatible with ASNA Visual RPG 14.0 or earlier. Please consider
+upgrading to ASNA Visual RPG 16.0 before installing ASNA Monarch
+10.0.</p>
+<p>Installing Microsoft’s latest service packs, high priority and
+optional software updates for Windows and the .NET Framework is highly
+recommended.</p>
+<p><a href="https://support.microsoft.com/en-us/kb/3118401">Windows
+optional update KB3118401 is required for correct operation of version
+16.0.</a></p>
+<h2 id="platform-support">Platform support</h2>
+<p>See the <a
+href="https://www.asna.com/en/support/product-requirements">ASNA Version
+Policy</a> for full requirements</p>
+<blockquote>
+<p>You can only install one version of an ASNA Windows product on a
+single PC. For example, you can’t install ASNA Visual RPG for .NET 17.0
+on a PC on which ASNA Visual RPG for .NET 16.0 is installed.</p>
+</blockquote>
+<h2 id="general-installation-tips">General installation tips</h2>
+<ul>
+<li><p>We strongly recommend you apply all pending Windows updates
+before installing any of our Windows products.</p></li>
+<li><p>Don’t install any ASNA Windows products while Visual Studio is
+running.</p></li>
+<li><p>For our products that snap into Visual Studio (ie, Visual RPG for
+.NET Framework, Wings, Mobile RPG, etc.) be sure to install Visual
+Studio first.</p></li>
+</ul>
+<h2 id="supported-web-browsers-smartphones-and-tablets">Supported Web
+browsers, smartphones, and tablets</h2>
+<p>Please see <a
+href="https://www.asna.com/en/kb/browsers-supported">this asna.com
+article</a> for ASNA’s browser and mobile client support.</p>
+<h2 id="database-name-change">Database Name change</h2>
+<p>DataGate 17 features secure database name storage using Windows
+DPAPI.ASNA has always recommended using <code>*PUBLIC</code> database
+names for websites. In v17, we further recommend always using the
+<code>*Public</code> prefix explicitly when referencing database names
+in website applications, including Monarch. Otherwise, applications may
+encounter run-time exceptions that include phrases such as “user profile
+not loaded” when Windows DPAPI is used in IIS sessions running with
+anonymous or impersonated credentials.</p>
+<p>For example, an AVR-based website might have code similar to the
+following, which references a DG database name in a DCLDB statement as
+follows:</p>
+<pre><code>DclDB Name(MyDatabase) DBName(&quot;IBMSERVER&quot;) Access(*Public)</code></pre>
+<p>We strongly recommend changing this statement as shown below:</p>
+<pre><code>DclDB Name(MyDatabase) DBName(&quot;*Public/IBMSERVER&quot;) Access(*Public)</code></pre>
+<p>If changing existing code is impractical, the only way to avoid
+errors is to ensure that the configuration of the IIS application pool
+in which the website runs includes the setting “Load User Profile =
+True”.</p>
+<blockquote>
+<p>Note that this setting may reduce the performance of large-scale
+website applications.</p>
+</blockquote>
+<p>Configuring IIS is Windows- and version-dependent, but generally
+follows this set of steps:</p>
+<ol type="1">
+<li>Open IIS Manager.</li>
+<li>Under the Application Pools node, select the Application Pool that
+the website runs under.</li>
+<li>On the right-hand panel, select “Advanced Settings…”. A property
+dialog appears.</li>
+<li>Scroll to the Load User Profile setting, and ensure that it is set
+to True.</li>
+<li>Restart IIS.</li>
+</ol>
+<p>Websites may produce “user profile not loaded” exceptions mentioned
+in the release Notes, even when database names are referenced with the
+recommended “*Public/” prefix. If so, you must configure the “Load User
+Profile = True” IIS Application Pool setting (also mentioned in the
+Release Notes) as a workaround. It is highly recommended to remove this
+workaround when you install the release of DataGate.</p>
+<p>ASNA Monarch Cocoon also requires:</p>
+<ul>
+<li>ASNA Monarch Collector version 10.x - <a
+href="http://docs.asna.com/documentation/Readme/Monarch41_Readme.htm#Installing_Collector">Installation
+instructions for Monarch Collector can be found here.</a></li>
+</ul>
+<hr />
+</body>
+</html>
+<h2 id="SinceVersion">Changes Since Version: 11.4.42.0</h2>
+
+<span class="changeNoteHeading"> Monarch Cocoon</span>
+<ul>
+    <li>Case 21049. Do not generate VirtualRowCol for output-only fields</li>
+    <li>Case 21743. Fields in a Row of a Record with same Col position are not migrated.</li>
+</ul>
+<div class="copyright">Copyright © 2025 by ASNA, Inc. All rights reserved</div>
