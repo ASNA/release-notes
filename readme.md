@@ -9,6 +9,11 @@ This is the repository of release notes for ASNA product downloads.
 
 #### Release date: 2025-03-07 Family: otis-beta 
 * [avr-setup-17.1.12.0.html](https://asna.github.io/release-notes/2025-03-07-otis-beta/avr-setup-17.1.12.0.html)
+* [browser-terminal-17.1.11.0.html](https://asna.github.io/release-notes/2025-03-07-otis-beta/browser-terminal-17.1.11.0.html)
+* [deployment-setup-17.1.11.0.html](https://asna.github.io/release-notes/2025-03-07-otis-beta/deployment-setup-17.1.11.0.html)
+* [monarch-framework-setup-17.1.11.0.html](https://asna.github.io/release-notes/2025-03-07-otis-beta/monarch-framework-setup-17.1.11.0.html)
+* [monarch-nomad-17.1.8.0.html](https://asna.github.io/release-notes/2025-03-07-otis-beta/monarch-nomad-17.1.8.0.html)
+* [wings-setup-11.1.11.0.html](https://asna.github.io/release-notes/2025-03-07-otis-beta/wings-setup-11.1.11.0.html)
 
 #### Release date: 2025-03-07 Family: datagate17.1-beta 
 * [dcs-setup-17.1.12.0.html](https://asna.github.io/release-notes/2025-03-07-datagate17.1-beta/dcs-setup-17.1.12.0.html)
