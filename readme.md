@@ -2,12 +2,17 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2025-06-02 Family: otis-beta 
+
+#### Release date: 2025-04-02 Family: badger-beta 
+* [avr-setup-5-5.123.0.html](https://asna.github.io/release-notes/2025-04-02-badger-beta/avr-setup-5-5.123.0.html)
+
 #### Release date: 2025-03-21 Family: papa-beta 
 * [ecr-setup-4.1.38.0.html](https://asna.github.io/release-notes/2025-03-21-papa-beta/ecr-setup-4.1.38.0.html)
 * [monarch-setup-11.4.52.0.html](https://asna.github.io/release-notes/2025-03-21-papa-beta/monarch-setup-11.4.52.0.html)
 * [synon-escape-11.4.41.0.html](https://asna.github.io/release-notes/2025-03-21-papa-beta/synon-escape-11.4.41.0.html)
 
-#### Release date: 2025-03-07 Family: otis-beta... 
+#### Release date: 2025-03-07 Family: otis-beta 
 * [avr-setup-17.1.12.0.html](https://asna.github.io/release-notes/2025-03-07-otis-beta/avr-setup-17.1.12.0.html)
 * [browser-terminal-17.1.11.0.html](https://asna.github.io/release-notes/2025-03-07-otis-beta/browser-terminal-17.1.11.0.html)
 * [deployment-setup-17.1.11.0.html](https://asna.github.io/release-notes/2025-03-07-otis-beta/deployment-setup-17.1.11.0.html)
