@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title>avr-setup | 17.037.0</title>
+    <link rel="stylesheet" href="https://nyc3.digitaloceanspaces.com/asna-assets/downloads/assets/release-notes.css" />
+</head>
+<body>
+<p><a href="https://asna.com"><img src="https://nyc3.digitaloceanspaces.com/asna-assets/asna-com/home/ASNA-logo.webp" alt="ASNA Logo"/></a></p>
+<h1 id="asna-visual-rpg-for.net-framework-release-notes">ASNA Visual RPG for .NET Framework release notes</h1>
+<p>Version: 17.037.0 - GA</p>
+<p>Release date: 2024-12-11</p>
+<hr />
+<h2 id="important-notices">Important notices</h2>
+<blockquote>
+<p>If you are upgrading from an earlier version of AVR, you may be effected by the changes to the ASNA Runtime (see <strong>ASNA Runtime Changes</strong> below).</p>
+</blockquote>
+<blockquote>
+<p>Visual RPG for .NET Framework 17.x requires .NET Framework 4.8</p>
+</blockquote>
+<blockquote>
+<p>Microsoft made major structural changes with Visual Studio 2022. These changes may cause intermittent errors with AVR 17.x's debugger. By Visual RPG 17.0.37.0
+we think we have most of them resolved. If you notice any issues with the debugger please contact tech support.</p>
+</blockquote>
+<h2 id="whats-new-for-visual-rpg-17">What's new for Visual RPG 17</h2>
+<ul>
+<li>Visual Studio 2022 support. You must use Visual Studio 2022 17.2 or higher.</li>
+</ul>
+<blockquote>
+<p>AVR 16/17.x requires .NET Framework 4.8 for both development and runtime.</p>
+</blockquote>
+<h2 id="platform-support">Platform support</h2>
+<p>See the <a href="https://www.asna.com/en/support/product-requirements">ASNA Version Policy</a> for full requirements</p>
+<blockquote>
+<p>You can only install one version of an ASNA Windows product on a single PC. For example, you can't install ASNA Visual RPG for .NET 17.0 on a PC on which ASNA Visual RPG for .NET 16.0 is installed.</p>
+</blockquote>
+<h2 id="general-installation-tips">General installation tips</h2>
+<ul>
+<li><p>We strongly recommend you apply all pending Windows updates before installing any of our Windows products.</p>
+</li>
+<li><p>Don't install any ASNA Windows products while Visual Studio is running.</p>
+</li>
+<li><p>For our products that snap into Visual Studio (ie, Visual RPG for .NET Framework, Wings, Mobile RPG, etc.) be sure to install Visual Studio first.</p>
+</li>
+</ul>
+<h2 id="asna-runtime-changes">ASNA Runtime Changes</h2>
+<p>Starting with the version 15.0 of the ASNA family of .NET products two changes were introduced to some ASNA DLLs. If you are upgrading to 15.x or higher from a previous release ASNA family release the following may apply to you.</p>
+<h3 id="asna.visualrpg.runtime.dll-expands-into-three-new-dlls">1. ASNA.VisualRPG.Runtime.DLL expands into three new DLLs</h3>
+<p>The first change is that ASNA.VisualRPG.Runtime.DLL expands into three new DLLS:</p>
+<ul>
+<li>ASNA.Runtime.DLL</li>
+<li>ASNA.Runtime.Support.DLL</li>
+<li>ASNA.Runtime.Monarch.DLL</li>
+</ul>
+<p>This increased granularity was made to better match library improvements and DLL changes to the various ASNA products that use them. The details of this three-way split are shown below in Figure 1.</p>
+<p><img src="https://nyc3.digitaloceanspaces.com/asna-assets/images/version15.x-dll-changes.png" alt="DLL changes introduced with ASNA Visual RPG for .NET Framework 15" /></p>
+<p>In Figure 1 above the namespaces each DLL provides are shown prefixed with . They are:</p>
+<ul>
+<li>ASNA.Monarch</li>
+<li>ASNA.Monarch.Wings</li>
+<li>ASNA.Runtime</li>
+<li>ASNA.VisualRPG.Runtime</li>
+</ul>
+<p>You can see that although ASNA.VisualRPG.Runtime.dll has been split into three DLLs the same namespaces are provided in the new DLLs. The version 15.x DLLs also provided a few new additional namespaces beyond what's shown in Figure 1.</p>
+<blockquote>
+<p>To maintain backwards compatibility of version 15.0 with previous versions we ship an <code>ASNA.VisualRPG.Runtime.dll</code> library which forwards requests for any of the four original namespaces that where in that DLL to the corresponding new DLL. We will stop shipping the <code>ASNA.VisualRPG.Runtime.dll</code> with the next major version of ASNA .NET products. This forwarding version of this DLL will be available as a separate download.</p>
+</blockquote>
+<h3 id="asna.visualrpg.common.sgml.dll-has-been-deprecated">2. ASNA.VisualRPG.Common.Sgml.dll has been deprecated.</h3>
+<p>The second change is that <code>ASNA.VisualRPG.Common.Sgml.dll</code> has been deprecated and its code has been moved to <code>ASNA.Runtime.dll</code>. This change mostly affects customers using Mobile RPG and Wings.</p>
+<h3 id="changes-you-need-to-make-because-of-these-dll-changes">Changes you need to make because of these DLL changes</h3>
+<blockquote>
+<p>There are <em>no</em> coding changes you need to make in your projects because of these changes. The only changes you need to make is adding and/or deleting references. For new 15.x projects the correct project references will already exist.</p>
+</blockquote>
+<ul>
+<li>For <strong>all project types</strong>:
+<ul>
+<li>Remove references to <code>ASNA.VisualRPG.Common.Sgml.dll</code></li>
+</ul>
+</li>
+</ul>
+<p>In addition to removing that reference:</p>
+<ul>
+<li><p>For <strong>Visual RPG Windows and Web projects</strong>:</p>
+<ul>
+<li>Remove the reference to <code>ASNA.VisualRPG.Runtime.dll</code></li>
+<li>Add a reference to <code>ASNA.Runtime.dll</code></li>
+</ul>
+</li>
+<li><p>For <strong>Wings</strong> and <strong>MobileRPG</strong> projects:</p>
+<ul>
+<li>Remove the reference to <code>ASNA.VisualRPG.Runtime.dll</code></li>
+<li>Add a reference to <code>ASNA.Runtime.dll</code></li>
+<li>Add a reference to <code>ASNA.Runtime.JobSupport.dll</code></li>
+</ul>
+</li>
+<li><p>For <strong>Monarch</strong> projects:</p>
+<ul>
+<li>Remove the reference to <code>ASNA.VisualRPG.Runtime.dll</code></li>
+<li>Add a reference to <code>ASNA.Runtime.dll</code></li>
+<li>Add a reference to <code>ASNA.Runtime.JobSupport.dll</code></li>
+<li>Add a reference to <code>ASNA.Runtime.Monarch.dll</code></li>
+</ul>
+</li>
+</ul>
+<p>The ASNA.Runtime.* DLLS are located at:</p>
+<pre><code>C:\Program Files (x86)\Common Files\ASNA Shared\Client\xx
+</code></pre>
+<p>where xx is the ASNA Visual RPG version number.</p>
+<p>For more details on the runtime changes click <a href="https://docs.asna.com/documentation/Help150/Readmes/ASNARuntimeChanges.htm">here</a>.</p>
+<h2 id="visual-studio-2022-editions">Visual Studio 2022 Editions</h2>
+<p>Visual Studio 2022 17.4 or higher Professional or Enterprise edition is required with the Papa family.</p>
+<h2 id="visual-studio-local-help-installation">Visual Studio local help installation</h2>
+<p>Visual Studio 2022 treats local (offline) as an optional component. As such installing it requires <a href="https://docs.asna.com/documentation/Help150/Readmes/Help150VisualStudioWorkloads.htm">some additional steps</a>:</p>
+<p>When installing Visual Studio 2019:</p>
+<ol>
+<li>Under the Individual Components tab.</li>
+<li>On the Code Tools section.</li>
+<li>Enable the Help Viewer component.</li>
+</ol>
+<p>To verify the Help Viewer is installed, look at the top of the Help Menu in Visual Studio. The following three options should be visible at the top of the menu:</p>
+<ol>
+<li>View Help</li>
+<li>Add and Remove Help Content</li>
+<li>Set Help Preferences</li>
+</ol>
+<h2 id="database-name-change">Database Name change</h2>
+<p>DataGate 17 features secure database name storage using Windows DPAPI.ASNA has always recommended using <code>*PUBLIC</code> database names for websites. In v17, we further recommend always using the <code>*Public</code> prefix explicitly when referencing database names in website applications, including Monarch. Otherwise, applications may encounter run-time exceptions that include phrases such as &quot;user profile not loaded&quot; when Windows DPAPI is used in IIS sessions running with anonymous or impersonated credentials.</p>
+<p>For example, an AVR-based website might have code similar to the following, which references a DG database name in a DCLDB statement as follows:</p>
+<pre><code>DclDB Name(MyDatabase) DBName(&quot;IBMSERVER&quot;) Access(*Public)
+</code></pre>
+<p>We strongly recommend changing this statement as shown below:</p>
+<pre><code>DclDB Name(MyDatabase) DBName(&quot;*Public/IBMSERVER&quot;) Access(*Public)
+</code></pre>
+<p>If changing existing code is impractical, the only way to avoid errors is to ensure that the configuration of the IIS application pool in which the website runs includes the setting &quot;Load User Profile = True&quot;.</p>
+<blockquote>
+<p>Note that this setting may reduce the performance of large-scale website applications.</p>
+</blockquote>
+<p>Configuring IIS is Windows- and version-dependent, but generally follows this set of steps:</p>
+<ol>
+<li>Open IIS Manager.</li>
+<li>Under the Application Pools node, select the Application Pool that the website runs under.</li>
+<li>On the right-hand panel, select &quot;Advanced Settings...&quot;.  A property dialog appears.</li>
+<li>Scroll to the Load User Profile setting, and ensure that it is set to True.</li>
+<li>Restart IIS.</li>
+</ol>
+<p>Websites may produce &quot;user profile not loaded&quot; exceptions mentioned in the release Notes, even when database names are referenced with the recommended &quot;*Public/&quot; prefix.  If so, you must configure the &quot;Load User Profile = True&quot; IIS Application Pool setting (also mentioned in the Release Notes) as a workaround. It is highly recommended to remove this workaround when you install the release of DataGate.</p>
+<h2 id="supported-web-browsers-smartphones-and-tablets">Supported Web browsers, smartphones, and tablets</h2>
+<p>Please see <a href="https://www.asna.com/en/kb/browsers-supported">this asna.com article</a> for ASNA's browser and mobile client support.</p>
+<h2 id="downloading-with-microsoft-edge">Downloading with Microsoft Edge</h2>
+<p>If this software is downloaded via Edge you may receive a message stating that this file &quot;is not commonly downloaded&quot; when attempting to install it. In this event click the <strong>View Downloads</strong> button, select the ASNA product to install from that list, and confirm that you'd like to install it.</p>
+<p>Similarly, attempting to install the software directly through Microsoft Windows may cause a &quot;Windows protected your PC&quot; message to appear. In this event click the small <code>More Info</code> prompt on the left, and click <code>Run Anyway</code> on the following window.</p>
+<hr />
+
+</body>
+</html>
