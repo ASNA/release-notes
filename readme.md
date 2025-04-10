@@ -53,13 +53,13 @@ This is the repository of release notes for ASNA product downloads.
 
 #### Release date: 2024-12-11 Family: oscar 
 * [avr-setup-17.0.37.0.html](https://asna.github.io/release-notes/2024-12-11-oscar/avr-setup-17.0.37.0.html)
-* [browser terminal-17.0.37.0.html](https://asna.github.io/release-notes/2024-12-11-oscar/browser terminal-17.0.37.0.html)
+* [browser-terminal-17.0.37.0.html](https://asna.github.io/release-notes/2024-12-11-oscar/browser-terminal-17.0.37.0.html)
 * [dcs-setup-17.0.36.0.html](https://asna.github.io/release-notes/2024-12-11-oscar/dcs-setup-17.0.36.0.html)
 * [dgmonitor-17.0.26.0.html](https://asna.github.io/release-notes/2024-12-11-oscar/dgmonitor-17.0.26.0.html)
 * [dgstudio-17.0.38.0.html](https://asna.github.io/release-notes/2024-12-11-oscar/dgstudio-17.0.38.0.html)
 * [dss-setup-17.0.36.0.html](https://asna.github.io/release-notes/2024-12-11-oscar/dss-setup-17.0.36.0.html)
 * [mobilerpg-setup-11.0.35.0.html](https://asna.github.io/release-notes/2024-12-11-oscar/mobilerpg-setup-11.0.35.0.html)
-* [monarch nomad-17.0.32.0.html](https://asna.github.io/release-notes/2024-12-11-oscar/monarch nomad-17.0.32.0.html)
+* [monarch-nomad-17.0.32.0.html](https://asna.github.io/release-notes/2024-12-11-oscar/monarch-nomad-17.0.32.0.html)
 * [wings-setup-11.0.38.0.html](https://asna.github.io/release-notes/2024-12-11-oscar/wings-setup-11.0.38.0.html)
 
 #### Release date: 2024-12-11 Family: nancy 
