@@ -11,12 +11,19 @@ This is the repository of release notes for ASNA product downloads.
 * [wings-setup-11.111.0.html](https://asna.github.io/release-notes/2025-06-02-otis-beta/wings-setup-11.111.0.html)
 
 #### Release date: 2025-04-11 Family: otis-beta 
-* [avr-setup-17.1.12.0.html](https://asna.github.io/release-notes/2025-04-11-otis-beta/avr-setup-17.1.12.0.html)
-* [browser-terminal-17.1.11.0.html](https://asna.github.io/release-notes/2025-04-11-otis-beta/browser-terminal-17.1.11.0.html)
-* [deployment-setup-17.1.11.0.html](https://asna.github.io/release-notes/2025-04-11-otis-beta/deployment-setup-17.1.11.0.html)
-* [monarch-framework-setup-17.1.11.0.html](https://asna.github.io/release-notes/2025-04-11-otis-beta/monarch-framework-setup-17.1.11.0.html)
-* [monarch-nomad-17.1.8.0.html](https://asna.github.io/release-notes/2025-04-11-otis-beta/monarch-nomad-17.1.8.0.html)
-* [wings-setup-11.1.11.0.html](https://asna.github.io/release-notes/2025-04-11-otis-beta/wings-setup-11.1.11.0.html)
+* [avr-setup-17.1.14.0.html](https://asna.github.io/release-notes/2025-04-11-otis-beta/avr-setup-17.1.14.0.html)
+* [browser-terminal-17.1.13.0.html](https://asna.github.io/release-notes/2025-04-11-otis-beta/browser-terminal-17.1.13.0.html)
+* [deployment-setup-17.1.13.0.html](https://asna.github.io/release-notes/2025-04-11-otis-beta/deployment-setup-17.1.13.0.html)
+* [monarch-framework-setup-17.1.13.0.html](https://asna.github.io/release-notes/2025-04-11-otis-beta/monarch-framework-setup-17.1.13.0.html)
+* [monarch-nomad-17.1.10.0.html](https://asna.github.io/release-notes/2025-04-11-otis-beta/monarch-nomad-17.1.10.0.html)
+* [wings-setup-11.1.13.0.html](https://asna.github.io/release-notes/2025-04-11-otis-beta/wings-setup-11.1.13.0.html)
+
+#### Release date: 2025-04-11 Family: datagate17.1-beta 
+* [dcs-setup-17.1.14.0.html](https://asna.github.io/release-notes/2025-04-11-datagate17.1-beta/dcs-setup-17.1.14.0.html)
+* [dg400-17.1.0.0.html](https://asna.github.io/release-notes/2025-04-11-datagate17.1-beta/dg400-17.1.0.0.html)
+* [dgmonitor-17.1.10.0.html](https://asna.github.io/release-notes/2025-04-11-datagate17.1-beta/dgmonitor-17.1.10.0.html)
+* [dgstudio-17.1.14.0.html](https://asna.github.io/release-notes/2025-04-11-datagate17.1-beta/dgstudio-17.1.14.0.html)
+* [dss-setup-17.1.14.0.html](https://asna.github.io/release-notes/2025-04-11-datagate17.1-beta/dss-setup-17.1.14.0.html)
 
 #### Release date: 2025-04-04 Family: badger-beta 
 * [avr-setup-5.124.0.html](https://asna.github.io/release-notes/2025-04-04-badger-beta/avr-setup-5.124.0.html)
