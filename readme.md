@@ -2,6 +2,12 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2025-05-02 Family: coyote-beta 
+* [avr-setup-5.2.8.0.html](https://asna.github.io/release-notes/2025-05-02-coyote-beta/avr-setup-5.2.8.0.html)
+
+#### Release date: 2025-05-02 Family: badger-beta 
+* [avr-setup-5.1.28.0.html](https://asna.github.io/release-notes/2025-05-02-badger-beta/avr-setup-5.1.28.0.html)
+
 #### Release date: 2025-05-01 Family: papa-beta 
 
 #### Release date: 2025-05-01 Family: otis-beta 
@@ -21,10 +27,6 @@ This is the repository of release notes for ASNA product downloads.
 * [dgmonitor-16.0.66.0.html](https://asna.github.io/release-notes/2025-05-01-datagate16-beta/dgmonitor-16.0.66.0.html)
 * [dgstudio-16.0.105.0.html](https://asna.github.io/release-notes/2025-05-01-datagate16-beta/dgstudio-16.0.105.0.html)
 * [dss-setup-16.0.90.0.html](https://asna.github.io/release-notes/2025-05-01-datagate16-beta/dss-setup-16.0.90.0.html)
-
-#### Release date: 2025-05-01 Family: coyote-beta 
-
-#### Release date: 2025-05-01 Family: badger-beta 
 
 #### Release date: 2025-04-11 Family: otis-beta 
 * [avr-setup-17.1.14.0.html](https://asna.github.io/release-notes/2025-04-11-otis-beta/avr-setup-17.1.14.0.html)
