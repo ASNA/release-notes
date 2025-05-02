@@ -17,6 +17,7 @@ This is the repository of release notes for ASNA product downloads.
 
 #### Release date: 2025-05-01 Family: datagate16-beta 
 * [dcs-setup-16.0.90.0.html](https://asna.github.io/release-notes/2025-05-01-datagate16-beta/dcs-setup-16.0.90.0.html)
+* [dg400-16.0.40.0.html](https://asna.github.io/release-notes/2025-05-01-datagate16-beta/dg400-16.0.40.0.html)
 * [dgmonitor-16.0.66.0.html](https://asna.github.io/release-notes/2025-05-01-datagate16-beta/dgmonitor-16.0.66.0.html)
 * [dgstudio-16.0.105.0.html](https://asna.github.io/release-notes/2025-05-01-datagate16-beta/dgstudio-16.0.105.0.html)
 * [dss-setup-16.0.90.0.html](https://asna.github.io/release-notes/2025-05-01-datagate16-beta/dss-setup-16.0.90.0.html)
