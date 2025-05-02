@@ -2,13 +2,28 @@
 
 This is the repository of release notes for ASNA product downloads.
 
-#### Release date: 2025-06-02 Family: otis-beta 
-* [avr-setup-17.112.0.html](https://asna.github.io/release-notes/2025-06-02-otis-beta/avr-setup-17.112.0.html)
-* [browser terminal-17.111.0.html](https://asna.github.io/release-notes/2025-06-02-otis-beta/browser terminal-17.111.0.html)
-* [deployment-setup-17.111.0.html](https://asna.github.io/release-notes/2025-06-02-otis-beta/deployment-setup-17.111.0.html)
-* [monarch nomad-17.18.0.html](https://asna.github.io/release-notes/2025-06-02-otis-beta/monarch nomad-17.18.0.html)
-* [monarch-framework-setup-17.111.0.html](https://asna.github.io/release-notes/2025-06-02-otis-beta/monarch-framework-setup-17.111.0.html)
-* [wings-setup-11.111.0.html](https://asna.github.io/release-notes/2025-06-02-otis-beta/wings-setup-11.111.0.html)
+#### Release date: 2025-05-01 Family: papa-beta 
+
+#### Release date: 2025-05-01 Family: otis-beta 
+
+#### Release date: 2025-05-01 Family: nancy-beta 
+* [avr-setup-16.0.91.0.html](https://asna.github.io/release-notes/2025-05-01-nancy-beta/avr-setup-16.0.91.0.html)
+* [browser-terminal-16.0.91.0.html](https://asna.github.io/release-notes/2025-05-01-nancy-beta/browser-terminal-16.0.91.0.html)
+* [mobilerpg-setup-10.0.95.0.html](https://asna.github.io/release-notes/2025-05-01-nancy-beta/mobilerpg-setup-10.0.95.0.html)
+* [monarch-nomad-16.0.89.0.html](https://asna.github.io/release-notes/2025-05-01-nancy-beta/monarch-nomad-16.0.89.0.html)
+* [monarch-setup-10.0.92.0.html](https://asna.github.io/release-notes/2025-05-01-nancy-beta/monarch-setup-10.0.92.0.html)
+* [synon-escape-10.0.63.0.html](https://asna.github.io/release-notes/2025-05-01-nancy-beta/synon-escape-10.0.63.0.html)
+* [wings-setup-10.0.96.0.html](https://asna.github.io/release-notes/2025-05-01-nancy-beta/wings-setup-10.0.96.0.html)
+
+#### Release date: 2025-05-01 Family: datagate16-beta 
+* [dcs-setup-16.0.90.0.html](https://asna.github.io/release-notes/2025-05-01-datagate16-beta/dcs-setup-16.0.90.0.html)
+* [dgmonitor-16.0.66.0.html](https://asna.github.io/release-notes/2025-05-01-datagate16-beta/dgmonitor-16.0.66.0.html)
+* [dgstudio-16.0.105.0.html](https://asna.github.io/release-notes/2025-05-01-datagate16-beta/dgstudio-16.0.105.0.html)
+* [dss-setup-16.0.90.0.html](https://asna.github.io/release-notes/2025-05-01-datagate16-beta/dss-setup-16.0.90.0.html)
+
+#### Release date: 2025-05-01 Family: coyote-beta 
+
+#### Release date: 2025-05-01 Family: badger-beta 
 
 #### Release date: 2025-04-11 Family: otis-beta 
 * [avr-setup-17.1.14.0.html](https://asna.github.io/release-notes/2025-04-11-otis-beta/avr-setup-17.1.14.0.html)
