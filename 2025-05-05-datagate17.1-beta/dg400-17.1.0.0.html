@@ -3,37 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0">
-    <title>webpak | 17.1.15.0</title>
+    <title>dg400 | 17.1.0.0</title>
     <link rel="stylesheet" href="https://nyc3.digitaloceanspaces.com/asna-assets/downloads/assets/release-notes.css" />
 </head>
 <body>
 <p><a href="https://asna.com"><img src="https://nyc3.digitaloceanspaces.com/asna-assets/asna-com/home/ASNA-logo.webp" alt="ASNA Logo"/></a></p>
-<h1 id="webpak">WebPak</h1>
-<p>Version: 17.1.15.0 - Beta</p>
+<h1 id="asna-datagate-for-ibm-i-release-notes">ASNA DataGate for IBM i release notes</h1>
+<p>Version: 17.1.0.0 - Beta</p>
 <p>Release date: 2025-05-05</p>
 <hr />
-<h2 id="platform-support">Platform support</h2>
-<p>See the <a href="https://www.asna.com/en/support/product-requirements">ASNA Version Policy</a> for full requirements</p>
-<blockquote>
-<p>You can only install one version of an ASNA Windows product on a single PC. For example, you can't install ASNA Visual RPG for .NET 17.0 on a PC on which ASNA Visual RPG for .NET 16.0 is installed.</p>
-</blockquote>
-<h2 id="general-installation-tips">General installation tips</h2>
-<ul>
-<li><p>We strongly recommend you apply all pending Windows updates before installing any of our Windows products.</p>
-</li>
-<li><p>Don't install any ASNA Windows products while Visual Studio is running.</p>
-</li>
-<li><p>For our products that snap into Visual Studio (ie, Visual RPG for .NET Framework, Wings, Mobile RPG, etc.) be sure to install Visual Studio first.
-<br><span style="font-size: .6rem; color: gray;">platform-support.md</span><br></p>
-</li>
-</ul>
-<h2 id="net-framework-and-visual-studio">.NET Framework and Visual Studio</h2>
-<p>All ASNA .NET Framework products need .NET 4.8x.</p>
-<blockquote>
-<p>Using Wings with Razor pages requires .NET 8+.</p>
-</blockquote>
-<p>For Visual RPG, Wings, etc, you'll need Visual Studio 2022 Professional Edition or Enterprise Edition. The Visual Studio Community Edition no longer works with ASNA products.
-<br><span style="font-size: .6rem; color: gray;">otis\client-requirements.md</span><br></p>
+<h2 id="client-compatibility">Client compatibility</h2>
+<p>See our <a href="https://www.asna.com/en/support/product-requirements#datagate-for-ibm-i">product requirements page</a> for DataGate for IBM i requirements on the IBM i.</p>
+<p>If you are using terminal emulation with either ASNA Wings or ASNA Browser Terminal, please be sure to update your DataGate clients to 16.0.x.0 (Wings 10.0.x.0 or WebPak 16.0.x.0) or newer on both your development and deployment machines before installing this new DataGate for IBM i server.</p>
+<p>Non-interactive connections (i.e. those not using the terminal emulator) done with older DataGate Clients will work, but any attempt to start a connection with 5250 emulation will require the client to be running at least version 14.0.0.0.</p>
+<h2 id="installation-instructions">Installation instructions</h2>
+<p><a href="https://docs.asna.com/documentation/Help170/DG400/_HTML/Installation.htm">DataGate for IBM i instructions.</a></p>
+<p><a href="https://asna.com/en/tags/datagate-ibm-i">Links to DataGate-focused articles at ASNA.com.</a></p>
 <h2 id="database-name-change">Database Name change</h2>
 <p>DataGate 17 features secure database name storage using Windows DPAPI.ASNA has always recommended using <code>*PUBLIC</code> database names for websites. In v17, we further recommend always using the <code>*Public</code> prefix explicitly when referencing database names in website applications, including Monarch. Otherwise, applications may encounter run-time exceptions that include phrases such as &quot;user profile not loaded&quot; when Windows DPAPI is used in IIS sessions running with anonymous or impersonated credentials.</p>
 <p>For example, an AVR-based website might have code similar to the following, which references a DG database name in a DCLDB statement as follows:</p>
@@ -80,11 +65,31 @@
 <p>If this software is downloaded via Edge you may receive a message stating that this file &quot;is not commonly downloaded&quot; when attempting to install it. In this event click the <strong>View Downloads</strong> button, select the ASNA product to install from that list, and confirm that you'd like to install it.</p>
 <p>Similarly, attempting to install the software directly through Microsoft Windows may cause a &quot;Windows protected your PC&quot; message to appear. In this event click the small <code>More Info</code> prompt on the left, and click <code>Run Anyway</code> on the following window.
 <br><span style="font-size: .6rem; color: gray;">ms-edge-warning.md</span><br></p>
+<h2 id="ibm-rational-open-access-rpg-edition">IBM Rational Open Access - RPG Edition</h2>
+<p>ASNA Wings and ASNA Mobile RPG requires the IBM i program feature, <a href="https://www.ibm.com/docs/fi/i/7.4.0?topic=edition-rational-open-access-rpg">IBM i Open Access</a>.</p>
+<blockquote>
+<p>For more details, please the IBM i Open Access manual with the link below:</p>
+<p><a href="https://www.ibm.com/docs/en/ssw_ibm_i_74/pdf/rzasmpdf.pdf">IBM i Open Access manual</a> &gt; <a href="https://www.ibm.com/docs/en/ssw_ibm_i_75/pdf/rzasmpdf.pdf">IBM i Open Access manual</a> &gt; <a href="https://www.ibm.com/docs/en/ssw_ibm_i_76/pdf/rzasmpdf.pdf">IBM i Open Access manual</a></p>
+</blockquote>
+<h2 id="ibm-i-open-access-handlers">IBM i Open Access Handlers</h2>
+<p>DataGate for IBM i installs the following Open Access handlers:</p>
+<ul>
+<li>BTerm</li>
+<li>Mobile RPG</li>
+<li>WingsRPG</li>
+<li>Wings Ext</li>
+</ul>
+<p>Each handler is licensed separately. Talk to your ASNA sales representative for licensing details.</p>
+<ul>
+<li>Handler support limited to ILE RPG (RPGIV) only. All other languages are excluded at this time by IBM, including CL.</li>
+<li>An Open-Access file cannot be a program-described WORKSTN file.
+<br><span style="font-size: .6rem; color: gray;">open-access-handlers.md</span><br></li>
+</ul>
 <hr />
 
 </body>
 </html>
-<h5 id="SinceVersion">Beta release</h5>
+<h5 id="SinceVersion">2025-03-07 release</h5>
 <ul> 
     <li>Security enhancements</li>
 </ul>
