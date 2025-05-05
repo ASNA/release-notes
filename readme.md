@@ -7,6 +7,21 @@ This is the repository of release notes for ASNA product downloads.
 * [monarch-setup-11.4.55.0.html](https://asna.github.io/release-notes/2025-05-05-papa-beta/monarch-setup-11.4.55.0.html)
 * [synon-escape-11.4.44.0.html](https://asna.github.io/release-notes/2025-05-05-papa-beta/synon-escape-11.4.44.0.html)
 
+#### Release date: 2025-05-05 Family: otis-beta 
+* [avr-setup-17.1.16.0.html](https://asna.github.io/release-notes/2025-05-05-otis-beta/avr-setup-17.1.16.0.html)
+* [browser-terminal-17.1.15.0.html](https://asna.github.io/release-notes/2025-05-05-otis-beta/browser-terminal-17.1.15.0.html)
+* [deployment-setup-17.1.15.0.html](https://asna.github.io/release-notes/2025-05-05-otis-beta/deployment-setup-17.1.15.0.html)
+* [monarch-framework-setup-11.1.15.0.html](https://asna.github.io/release-notes/2025-05-05-otis-beta/monarch-framework-setup-11.1.15.0.html)
+* [monarch-nomad-17.1.12.0.html](https://asna.github.io/release-notes/2025-05-05-otis-beta/monarch-nomad-17.1.12.0.html)
+* [wings-setup-11.1.15.0.html](https://asna.github.io/release-notes/2025-05-05-otis-beta/wings-setup-11.1.15.0.html)
+
+#### Release date: 2025-05-05 Family: datagate17.1-beta 
+* [dcs-setup-17.1.16.0.html](https://asna.github.io/release-notes/2025-05-05-datagate17.1-beta/dcs-setup-17.1.16.0.html)
+* [dgmonitor-17.1.12.0.html](https://asna.github.io/release-notes/2025-05-05-datagate17.1-beta/dgmonitor-17.1.12.0.html)
+* [dgstudio-17.1.16.0.html](https://asna.github.io/release-notes/2025-05-05-datagate17.1-beta/dgstudio-17.1.16.0.html)
+* [dss-setup-17.1.16.0.html](https://asna.github.io/release-notes/2025-05-05-datagate17.1-beta/dss-setup-17.1.16.0.html)
+* [webpak-17.1.15.0.html](https://asna.github.io/release-notes/2025-05-05-datagate17.1-beta/webpak-17.1.15.0.html)
+
 #### Release date: 2025-05-02 Family: coyote-beta 
 * [avr-setup-5.2.8.0.html](https://asna.github.io/release-notes/2025-05-02-coyote-beta/avr-setup-5.2.8.0.html)
 
@@ -14,8 +29,6 @@ This is the repository of release notes for ASNA product downloads.
 * [avr-setup-5.1.28.0.html](https://asna.github.io/release-notes/2025-05-02-badger-beta/avr-setup-5.1.28.0.html)
 
 #### Release date: 2025-05-01 Family: papa-beta 
-
-#### Release date: 2025-05-01 Family: otis-beta 
 
 #### Release date: 2025-05-01 Family: nancy-beta 
 * [avr-setup-16.0.91.0.html](https://asna.github.io/release-notes/2025-05-01-nancy-beta/avr-setup-16.0.91.0.html)
