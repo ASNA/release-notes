@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title>ecr-setup | 4.1.42.0</title>
+    <link rel="stylesheet" href="https://nyc3.digitaloceanspaces.com/asna-assets/downloads/assets/release-notes.css" />
+</head>
+<body>
+<p><a href="https://asna.com"><img src="https://nyc3.digitaloceanspaces.com/asna-assets/asna-com/home/ASNA-logo.webp" alt="ASNA Logo"/></a></p>
+<h1 id="asna-encore-release-notes">ASNA Encore release notes</h1>
+<p>Version: 4.1.42.0 - Beta</p>
+<p>Release date: 2025-05-05</p>
+<hr />
+<div style="background-color: pink; padding: 1rem;">
+<h2 id="upgrading-your-version-of.net-before-sure-to-read-this">Upgrading your version of .NET? Before sure to read this!</h2>
+<p>If you update your version of .NET, you will need to repair Encore 4.0 and Cocoon 11.4 if they are installed. This ensures Visual Studio's project templates will be available after the upgrade.</p>
+<p>This is required because in order for the SDK to resolve properly and the templates to be available to all users, we must install certain files to versioned dotnet directories (currently C:\Program Files\dotnet\sdk[version] and C:\Program Files\dotnet\templates[version]). When the repair is performed, we re-install these components to the updated version directories.</p>
+</div>
+<br>
+<br><span style="font-size: .6rem; color: gray;">upgrade-dot-net.md</span><br>
+<h2 id="net-aka.net-core-and-visual-studio">.NET (aka .NET Core) and Visual Studio</h2>
+<p>ASNA Encore 4.1.8.0+ and ASNA Monarch 11.4.34.0+ provide .NET 8 support.</p>
+<ul>
+<li>Minimum .NET version: .NET 6 or higher</li>
+<li>Minimum Visual Studio: Visual Studio 2022 build: 17.8</li>
+</ul>
+<p>The Visual Studio Community Edition no longer works with ASNA products.
+<br><span style="font-size: .6rem; color: gray;">17-11.4-papa-client-requirements.md</span><br></p>
+<h2 id="platform-support">Platform support</h2>
+<p>See the <a href="https://www.asna.com/en/support/product-requirements">ASNA Version Policy</a> for full requirements</p>
+<blockquote>
+<p>You can only install one version of an ASNA Windows product on a single PC. For example, you can't install ASNA Visual RPG for .NET 17.0 on a PC on which ASNA Visual RPG for .NET 16.0 is installed.</p>
+</blockquote>
+<h2 id="general-installation-tips">General installation tips</h2>
+<ul>
+<li><p>We strongly recommend you apply all pending Windows updates before installing any of our Windows products.</p>
+</li>
+<li><p>Don't install any ASNA Windows products while Visual Studio is running.</p>
+</li>
+<li><p>For our products that snap into Visual Studio (ie, Visual RPG for .NET Framework, Wings, Mobile RPG, etc.) be sure to install Visual Studio first.
+<br><span style="font-size: .6rem; color: gray;">platform-support.md</span><br></p>
+</li>
+</ul>
+<h2 id="visual-studio-local-help-installation">Visual Studio local help installation</h2>
+<p>Visual Studio treats local (offline) as an optional component. As such installing it requires <a href="https://docs.asna.com/documentation/Help150/Readmes/Help150VisualStudioWorkloads.htm">some additional steps</a>:</p>
+<blockquote>
+<p>The note above applies to any version of Visual Studio.</p>
+</blockquote>
+<p>When installing Visual Studio:</p>
+<ol>
+<li>Under the Individual Components tab.</li>
+<li>On the Code Tools section.</li>
+<li>Enable the Help Viewer component.</li>
+</ol>
+<p>To verify the Help Viewer is installed, look at the top of the Help Menu in Visual Studio. The following three options should be visible at the top of the menu:</p>
+<ol>
+<li>View Help</li>
+<li>Add and Remove Help Content</li>
+<li>Set Help Preferences
+<br><span style="font-size: .6rem; color: gray;">visual-studio-local-help.md</span><br></li>
+</ol>
+<hr />
+
+</body>
+</html>
+<h5 id="SinceVersion">Changes Since Version: 4.1.36.0</h5>
+
+<span class="changeNoteHeading">ASNA Services</span>
+<ul>
+    <li>ASNA Coordinator - replaces existing ASNA services; resolves a vulnerability issue.</li>
+</ul>
+
+<span class="changeNoteHeading"> QSys - DataGate.Client</span>
+<ul>
+    <li>Clarify and update TLS options.</li>
+</ul>
+
+<span class="changeNoteHeading"> QSys - Expo</span>
+<ul>
+    <li>To Fix Case 21747: Use new configuration value asna:SystemValues:EditCodeFlags.</li>
+    <li>Use RedirectedAbEnd Exception like it is used in YellowPage.</li>
+</ul>
+
+<span class="changeNoteHeading"> QSys - Runtime</span>
+<ul>
+    <li>Case 21747. Set new EditCode.EditCodeFlags to ZeroSuppressAt2ndChar.</li>
+    <li>Use new PrinterConfiguration DG facility.</li>
+    <li>Set query keys on DataSet for Linear. (#179)</li>
+</ul>
+
+<span class="changeNoteHeading"> RnD - Encore Compiler</span>
+<ul>
+    <li>Fix crash when generating io.cs file when a record format name has non-C# characters.</li>
+    <li>Re-add temp indicator to CALLD.</li>
+    <li>Give better error message when using *OMIT in CALLB</li>
+    <li>Ensure *OMIT doesn't produce 'ref null' when used as a parameter in CALLD.</li>
+    <li>If LR is not given in CALLD, use "out _" as a parameter in the C# call, instead of a local temp.</li>
+    <li>Ensure enum types are scalars.</li>
+    <li>Make sure type name has its namespace removed if needed.</li>
+    <li>Fixed bugs in generation of TESTNUM code and temp field initialization.</li>
+    <li>Initialize to all '0'. Validate: 1- not externally described, 2- only *Ind fields.</li>
+    <li>Add validation for array DS fields of *Ind type.</li>
+    <li>Support program described files that have the same file, record, and field names.</li>
+    <li>Added support for INDDS with compiler-generated length of 99 positions (Workstation file and Print file).</li>
+    <li>Like integers, byte types can also be enums.</li>
+</ul>
