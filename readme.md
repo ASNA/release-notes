@@ -2,6 +2,10 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2025-05-21 Family: papa 
+* [ecr-setup-4.1.42.0.html](https://asna.github.io/release-notes/2025-05-21-papa/ecr-setup-4.1.42.0.html)
+* [monarch-setup-11.4.50.0.html](https://asna.github.io/release-notes/2025-05-21-papa/monarch-setup-11.4.50.0.html)
+
 #### Release date: 2025-05-05 Family: papa-beta 
 * [ecr-setup-4.1.42.0.html](https://asna.github.io/release-notes/2025-05-05-papa-beta/ecr-setup-4.1.42.0.html)
 * [monarch-setup-11.4.55.0.html](https://asna.github.io/release-notes/2025-05-05-papa-beta/monarch-setup-11.4.55.0.html)
