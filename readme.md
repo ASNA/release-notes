@@ -2,6 +2,22 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2025-05-29 Family: otis-beta 
+* [avr-setup-17.1.17.0.html](https://asna.github.io/release-notes/2025-05-29-otis-beta/avr-setup-17.1.17.0.html)
+* [browser-terminal-17.1.16.0.html](https://asna.github.io/release-notes/2025-05-29-otis-beta/browser-terminal-17.1.16.0.html)
+* [deployment-setup-17.1.17.0.html](https://asna.github.io/release-notes/2025-05-29-otis-beta/deployment-setup-17.1.17.0.html)
+* [monarch-framework-setup-17.1.16.0.html](https://asna.github.io/release-notes/2025-05-29-otis-beta/monarch-framework-setup-17.1.16.0.html)
+* [monarch-nomad-17.1.13.0.html](https://asna.github.io/release-notes/2025-05-29-otis-beta/monarch-nomad-17.1.13.0.html)
+* [wings-setup-11.1.16.0.html](https://asna.github.io/release-notes/2025-05-29-otis-beta/wings-setup-11.1.16.0.html)
+
+#### Release date: 2025-05-29 Family: datagate17.1 
+* [dcs-setup-17.1.17.0.html](https://asna.github.io/release-notes/2025-05-29-datagate17.1/dcs-setup-17.1.17.0.html)
+* [dg400-17.1.0.11.html](https://asna.github.io/release-notes/2025-05-29-datagate17.1/dg400-17.1.0.11.html)
+* [dgmonitor-17.1.13.0.html](https://asna.github.io/release-notes/2025-05-29-datagate17.1/dgmonitor-17.1.13.0.html)
+* [dgstudio-17.1.17.0.html](https://asna.github.io/release-notes/2025-05-29-datagate17.1/dgstudio-17.1.17.0.html)
+* [dss-setup-17.1.17.0.html](https://asna.github.io/release-notes/2025-05-29-datagate17.1/dss-setup-17.1.17.0.html)
+* [webpak-17.1.16.0.html](https://asna.github.io/release-notes/2025-05-29-datagate17.1/webpak-17.1.16.0.html)
+
 #### Release date: 2025-05-21 Family: papa-beta 
 * [ecr-setup-4.1.43.0.html](https://asna.github.io/release-notes/2025-05-21-papa-beta/ecr-setup-4.1.43.0.html)
 * [monarch-setup-11.4.56.0.html](https://asna.github.io/release-notes/2025-05-21-papa-beta/monarch-setup-11.4.56.0.html)
