@@ -2,13 +2,13 @@
 
 This is the repository of release notes for ASNA product downloads.
 
-#### Release date: 2025-05-29 Family: otis-beta 
-* [avr-setup-17.1.17.0.html](https://asna.github.io/release-notes/2025-05-29-otis-beta/avr-setup-17.1.17.0.html)
-* [browser-terminal-17.1.16.0.html](https://asna.github.io/release-notes/2025-05-29-otis-beta/browser-terminal-17.1.16.0.html)
-* [deployment-setup-17.1.17.0.html](https://asna.github.io/release-notes/2025-05-29-otis-beta/deployment-setup-17.1.17.0.html)
-* [monarch-framework-setup-17.1.16.0.html](https://asna.github.io/release-notes/2025-05-29-otis-beta/monarch-framework-setup-17.1.16.0.html)
-* [monarch-nomad-17.1.13.0.html](https://asna.github.io/release-notes/2025-05-29-otis-beta/monarch-nomad-17.1.13.0.html)
-* [wings-setup-11.1.16.0.html](https://asna.github.io/release-notes/2025-05-29-otis-beta/wings-setup-11.1.16.0.html)
+#### Release date: 2025-05-29 Family: otis 
+* [avr-setup-17.1.17.0.html](https://asna.github.io/release-notes/2025-05-29-otis/avr-setup-17.1.17.0.html)
+* [browser-terminal-17.1.16.0.html](https://asna.github.io/release-notes/2025-05-29-otis/browser-terminal-17.1.16.0.html)
+* [deployment-setup-17.1.17.0.html](https://asna.github.io/release-notes/2025-05-29-otis/deployment-setup-17.1.17.0.html)
+* [monarch-framework-setup-17.1.16.0.html](https://asna.github.io/release-notes/2025-05-29-otis/monarch-framework-setup-17.1.16.0.html)
+* [monarch-nomad-17.1.13.0.html](https://asna.github.io/release-notes/2025-05-29-otis/monarch-nomad-17.1.13.0.html)
+* [wings-setup-11.1.16.0.html](https://asna.github.io/release-notes/2025-05-29-otis/wings-setup-11.1.16.0.html)
 
 #### Release date: 2025-05-29 Family: datagate17.1 
 * [dcs-setup-17.1.17.0.html](https://asna.github.io/release-notes/2025-05-29-datagate17.1/dcs-setup-17.1.17.0.html)
