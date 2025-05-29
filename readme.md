@@ -12,7 +12,7 @@ This is the repository of release notes for ASNA product downloads.
 
 #### Release date: 2025-05-29 Family: datagate17.1 
 * [dcs-setup-17.1.17.0.html](https://asna.github.io/release-notes/2025-05-29-datagate17.1/dcs-setup-17.1.17.0.html)
-* [dg400-17.1.0.11.html](https://asna.github.io/release-notes/2025-05-29-datagate17.1/dg400-17.1.0.11.html)
+* [dg400-17.1.11.0.html](https://asna.github.io/release-notes/2025-05-29-datagate17.1/dg400-17.1.11.0.html)
 * [dgmonitor-17.1.13.0.html](https://asna.github.io/release-notes/2025-05-29-datagate17.1/dgmonitor-17.1.13.0.html)
 * [dgstudio-17.1.17.0.html](https://asna.github.io/release-notes/2025-05-29-datagate17.1/dgstudio-17.1.17.0.html)
 * [dss-setup-17.1.17.0.html](https://asna.github.io/release-notes/2025-05-29-datagate17.1/dss-setup-17.1.17.0.html)
