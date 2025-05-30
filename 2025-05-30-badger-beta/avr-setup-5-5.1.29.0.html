@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title>avr-setup-5 | 5.1.29.0</title>
+    <link rel="stylesheet" href="https://nyc3.digitaloceanspaces.com/asna-assets/downloads/assets/release-notes.css" />
+</head>
+<body>
+<p><a href="https://asna.com"><img src="https://nyc3.digitaloceanspaces.com/asna-assets/asna-com/home/ASNA-logo.webp" alt="ASNA Logo"/></a></p>
+<h1 id="asna-visual-rpg-classic-5.1-release-notes">ASNA Visual RPG Classic 5.1 release notes</h1>
+<p>Version: 5.1.29.0 - Beta</p>
+<p>Release date: 2025-05-30</p>
+<hr />
+<p>This is the AVR Classic development package. It includes the Visual RPG 5.1 compiler and its integrated development environment. It is for use with Windows Professional 10 or 11.</p>
+<blockquote>
+<p>Note that AVR Classic 5.1 <em>does not</em> coexist with other versions of AVR Classic. It does coexist with AVR for .NET.</p>
+</blockquote>
+<h2 id="windows-updates">Windows updates</h2>
+<blockquote>
+<p>It is very important that you install all Microsoft Windows updates before installing AVR 5.2 Classic.</p>
+</blockquote>
+<p><a href="https://support.microsoft.com/en-us/windows/windows-update-faq-8a903416-6f45-0718-f5c7-375e92dddeb2#:%7E:text=ready%20and%20compatible.-,Check%20for%20updates.,and%20download%20the%20Update%20Assistant.">See this MS link about Microsoft updates for more information. </a></p>
+<h2 id="licensing">Licensing</h2>
+<p>You'll need a license for this package. Please contact us at codes@asna.com for your license.</p>
+<h2 id="third-party-controls">Third-party controls</h2>
+<p>Our testing so far has been encouraging with most third-party controls on Windows 10/11. However, third-party controls do remain a potential concern with AVR 5.1. Their behavior is beyond our control so if they have issues there isn't anything we can do about those controls.</p>
+<p>Customers using third-party controls will need to test their apps vigilantly. One of the sticky issues here is that the ActiveX vendor may be out of business. Mabry and Graphics Server are simply gone. Sheridan was bought by Component Source and they still sell the popular Sheridan ActiveThreed controls, but with a caveat on their Web page that says:</p>
+<blockquote>
+<p>&quot;Please note that this product is no longer supported by the publisher, so it is no longer eligible for product support or maintenance.&quot;</p>
+</blockquote>
+<h2 id="graphics-server-control">Graphics Server control</h2>
+<p>It has worked in our tests so far, but the AVR Classic graph control was licensed from Graphics Server and which is now out of business. It's quite likely that the graph control will continue to work with Windows 10/11 and the latest Windows Servers, but if it doesn't, you'll need to find a workable alternative.
+<br><span style="font-size: .6rem; color: gray;">badger\dev.md</span><br></p>
+<h2 id="platform-support">Platform support</h2>
+<p>See the <a href="https://www.asna.com/en/support/product-requirements">ASNA Version Policy</a> for full requirements</p>
+<blockquote>
+<p>You can only install one version of an ASNA Windows product on a single PC. For example, you can't install ASNA Visual RPG for .NET 17.0 on a PC on which ASNA Visual RPG for .NET 16.0 is installed.</p>
+</blockquote>
+<h2 id="general-installation-tips">General installation tips</h2>
+<ul>
+<li><p>We strongly recommend you apply all pending Windows updates before installing any of our Windows products.</p>
+</li>
+<li><p>Don't install any ASNA Windows products while Visual Studio is running.</p>
+</li>
+<li><p>For our products that snap into Visual Studio (ie, Visual RPG for .NET Framework, Wings, Mobile RPG, etc.) be sure to install Visual Studio first.
+<br><span style="font-size: .6rem; color: gray;">platform-support.md</span><br></p>
+</li>
+</ul>
+<h2 id="downloading-with-microsoft-edge">Downloading with Microsoft Edge</h2>
+<p>If this software is downloaded via Edge you may receive a message stating that this file &quot;is not commonly downloaded&quot; when attempting to install it. In this event click the <strong>View Downloads</strong> button, select the ASNA product to install from that list, and confirm that you'd like to install it.</p>
+<p>Similarly, attempting to install the software directly through Microsoft Windows may cause a &quot;Windows protected your PC&quot; message to appear. In this event click the small <code>More Info</code> prompt on the left, and click <code>Run Anyway</code> on the following window.
+<br><span style="font-size: .6rem; color: gray;">ms-edge-warning.md</span><br></p>
+<hr />
+
+</body>
+</html>
+<h5 id="SinceVersion">Changes Since Version: 5.1.28.0</h5>
+
+<span class="changeNoteHeading"> Registration Assistant</span>
+<ul>
+    <li>Case 21764. "Invalid Response" error at start up.</li>
+</ul>
+
+<span class="changeNoteHeading"> Services</span>
+<ul>
+    <li>Case 21759. Potential buffer overflow from usage of unsafe function.</li>
+    <li>Case 21764. "Invalid Response" error at start up.</li>
+</ul>

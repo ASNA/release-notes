@@ -2,6 +2,9 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2025-05-30 Family: badger-beta 
+* [avr-setup-5-5.1.29.0.html](https://asna.github.io/release-notes/2025-05-30-badger-beta/avr-setup-5-5.1.29.0.html)
+
 #### Release date: 2025-05-29 Family: otis 
 * [avr-setup-17.1.17.0.html](https://asna.github.io/release-notes/2025-05-29-otis/avr-setup-17.1.17.0.html)
 * [browser-terminal-17.1.16.0.html](https://asna.github.io/release-notes/2025-05-29-otis/browser-terminal-17.1.16.0.html)
