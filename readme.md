@@ -2,6 +2,21 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2025-06-04 Family: nancy-beta 
+* [avr-setup-16.0.92.0.html](https://asna.github.io/release-notes/2025-06-04-nancy-beta/avr-setup-16.0.92.0.html)
+* [browser-terminal-16.0.92.0.html](https://asna.github.io/release-notes/2025-06-04-nancy-beta/browser-terminal-16.0.92.0.html)
+* [mobilerpg-setup-10.0.96.0.html](https://asna.github.io/release-notes/2025-06-04-nancy-beta/mobilerpg-setup-10.0.96.0.html)
+* [monarch-nomad-16.0.90.0.html](https://asna.github.io/release-notes/2025-06-04-nancy-beta/monarch-nomad-16.0.90.0.html)
+* [monarch-setup-10.0.93.0.html](https://asna.github.io/release-notes/2025-06-04-nancy-beta/monarch-setup-10.0.93.0.html)
+* [wings-setup-10.0.97.0.html](https://asna.github.io/release-notes/2025-06-04-nancy-beta/wings-setup-10.0.97.0.html)
+
+#### Release date: 2025-06-04 Family: datagate16-beta 
+* [dcs-setup-16.0.91.0.html](https://asna.github.io/release-notes/2025-06-04-datagate16-beta/dcs-setup-16.0.91.0.html)
+* [dg400-16.0.40.0.html](https://asna.github.io/release-notes/2025-06-04-datagate16-beta/dg400-16.0.40.0.html)
+* [dgmonitor-16.0.67.0.html](https://asna.github.io/release-notes/2025-06-04-datagate16-beta/dgmonitor-16.0.67.0.html)
+* [dgstudio-16.0.106.0.html](https://asna.github.io/release-notes/2025-06-04-datagate16-beta/dgstudio-16.0.106.0.html)
+* [dss-setup-16.0.91.0.html](https://asna.github.io/release-notes/2025-06-04-datagate16-beta/dss-setup-16.0.91.0.html)
+
 #### Release date: 2025-05-30 Family: badger-beta 
 * [avr-setup-5-5.1.29.0.html](https://asna.github.io/release-notes/2025-05-30-badger-beta/avr-setup-5-5.1.29.0.html)
 
