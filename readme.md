@@ -2,6 +2,19 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2025-06-25 Family: nancy-beta 
+* [avr-setup-16.0.93.0.html](https://asna.github.io/release-notes/2025-06-25-nancy-beta/avr-setup-16.0.93.0.html)
+* [browser-terminal-16.0.93.0.html](https://asna.github.io/release-notes/2025-06-25-nancy-beta/browser-terminal-16.0.93.0.html)
+* [mobilerpg-setup-10.0.97.0.html](https://asna.github.io/release-notes/2025-06-25-nancy-beta/mobilerpg-setup-10.0.97.0.html)
+* [monarch-nomad-16.0.91.0.html](https://asna.github.io/release-notes/2025-06-25-nancy-beta/monarch-nomad-16.0.91.0.html)
+* [wings-setup-10.0.98.0.html](https://asna.github.io/release-notes/2025-06-25-nancy-beta/wings-setup-10.0.98.0.html)
+
+#### Release date: 2025-06-25 Family: datagate16-beta 
+* [dcs-setup-16.0.92.0.html](https://asna.github.io/release-notes/2025-06-25-datagate16-beta/dcs-setup-16.0.92.0.html)
+* [dg400-16.0.40.0.html](https://asna.github.io/release-notes/2025-06-25-datagate16-beta/dg400-16.0.40.0.html)
+* [dgstudio-16.0.107.0.html](https://asna.github.io/release-notes/2025-06-25-datagate16-beta/dgstudio-16.0.107.0.html)
+* [dss-setup-16.0.92.0.html](https://asna.github.io/release-notes/2025-06-25-datagate16-beta/dss-setup-16.0.92.0.html)
+
 #### Release date: 2025-06-05 Family: coyote-beta 
 * [avr-setup-5.2.9.0.html](https://asna.github.io/release-notes/2025-06-05-coyote-beta/avr-setup-5.2.9.0.html)
 
