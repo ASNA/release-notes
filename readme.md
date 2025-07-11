@@ -2,6 +2,14 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2025-07-11 Family: papa-beta 
+* [ecr-setup-4.1.45.0.html](https://asna.github.io/release-notes/2025-07-11-papa-beta/ecr-setup-4.1.45.0.html)
+* [monarch-setup-11.4.58.0.html](https://asna.github.io/release-notes/2025-07-11-papa-beta/monarch-setup-11.4.58.0.html)
+
+#### Release date: 2025-07-11 Family: papa 
+* [ecr-setup-4.1.42.0.html](https://asna.github.io/release-notes/2025-07-11-papa/ecr-setup-4.1.42.0.html)
+* [monarch-setup-11.4.50.0.html](https://asna.github.io/release-notes/2025-07-11-papa/monarch-setup-11.4.50.0.html)
+
 #### Release date: 2025-07-01 Family: nancy 
 * [avr-setup-16.0.93.0.html](https://asna.github.io/release-notes/2025-07-01-nancy/avr-setup-16.0.93.0.html)
 * [browser-terminal-16.0.93.0.html](https://asna.github.io/release-notes/2025-07-01-nancy/browser-terminal-16.0.93.0.html)
@@ -9,12 +17,12 @@ This is the repository of release notes for ASNA product downloads.
 * [monarch-nomad-16.0.91.0.html](https://asna.github.io/release-notes/2025-07-01-nancy/monarch-nomad-16.0.91.0.html)
 * [wings-setup-10.0.98.0.html](https://asna.github.io/release-notes/2025-07-01-nancy/wings-setup-10.0.98.0.html)
 
-#### Release date: 2025-07-01 Family: datagate16 
-* [dcs-setup-16.0.92.0.html](https://asna.github.io/release-notes/2025-07-01-datagate16/dcs-setup-16.0.92.0.html)
-* [dg400-16.0.40.0.html](https://asna.github.io/release-notes/2025-07-01-datagate16/dg400-16.0.40.0.html)
-* [dgmonitor-16.0.67.0.html](https://asna.github.io/release-notes/2025-07-01-datagate16/dgmonitor-16.0.67.0.html)
-* [dgstudio-16.0.107.0.html](https://asna.github.io/release-notes/2025-07-01-datagate16/dgstudio-16.0.107.0.html)
-* [dss-setup-16.0.92.0.html](https://asna.github.io/release-notes/2025-07-01-datagate16/dss-setup-16.0.92.0.html)
+#### Release date: 2025-07-01 Family: datagate16.0 
+* [dcs-setup-16.0.92.0.html](https://asna.github.io/release-notes/2025-07-01-datagate16.0/dcs-setup-16.0.92.0.html)
+* [dg400-16.0.40.0.html](https://asna.github.io/release-notes/2025-07-01-datagate16.0/dg400-16.0.40.0.html)
+* [dgmonitor-16.0.67.0.html](https://asna.github.io/release-notes/2025-07-01-datagate16.0/dgmonitor-16.0.67.0.html)
+* [dgstudio-16.0.107.0.html](https://asna.github.io/release-notes/2025-07-01-datagate16.0/dgstudio-16.0.107.0.html)
+* [dss-setup-16.0.92.0.html](https://asna.github.io/release-notes/2025-07-01-datagate16.0/dss-setup-16.0.92.0.html)
 
 #### Release date: 2025-07-01 Family: coyote 
 * [avr-setup-5.2.9.0.html](https://asna.github.io/release-notes/2025-07-01-coyote/avr-setup-5.2.9.0.html)
@@ -203,12 +211,12 @@ This is the repository of release notes for ASNA product downloads.
 * [synon-escape-10.0.62.0.html](https://asna.github.io/release-notes/2024-12-11-nancy/synon-escape-10.0.62.0.html)
 * [wings-setup-10.0.95.0.html](https://asna.github.io/release-notes/2024-12-11-nancy/wings-setup-10.0.95.0.html)
 
-#### Release date: 2024-12-11 Family: datagate17 
-* [dcs-setup-17.0.36.0.html](https://asna.github.io/release-notes/2024-12-11-datagate17/dcs-setup-17.0.36.0.html)
-* [dg400-17.0.41.0.html](https://asna.github.io/release-notes/2024-12-11-datagate17/dg400-17.0.41.0.html)
-* [dgmonitor-17.0.26.0.html](https://asna.github.io/release-notes/2024-12-11-datagate17/dgmonitor-17.0.26.0.html)
-* [dgstudio-17.0.38.0.html](https://asna.github.io/release-notes/2024-12-11-datagate17/dgstudio-17.0.38.0.html)
-* [dss-setup-17.0.36.0.html](https://asna.github.io/release-notes/2024-12-11-datagate17/dss-setup-17.0.36.0.html)
+#### Release date: 2024-12-11 Family: datagate17.0 
+* [dcs-setup-17.0.36.0.html](https://asna.github.io/release-notes/2024-12-11-datagate17.0/dcs-setup-17.0.36.0.html)
+* [dg400-17.0.41.0.html](https://asna.github.io/release-notes/2024-12-11-datagate17.0/dg400-17.0.41.0.html)
+* [dgmonitor-17.0.26.0.html](https://asna.github.io/release-notes/2024-12-11-datagate17.0/dgmonitor-17.0.26.0.html)
+* [dgstudio-17.0.38.0.html](https://asna.github.io/release-notes/2024-12-11-datagate17.0/dgstudio-17.0.38.0.html)
+* [dss-setup-17.0.36.0.html](https://asna.github.io/release-notes/2024-12-11-datagate17.0/dss-setup-17.0.36.0.html)
 
 #### Release date: 2024-12-11 Family: datagate16 
 * [dcs-setup-16.0.89.0.html](https://asna.github.io/release-notes/2024-12-11-datagate16/dcs-setup-16.0.89.0.html)
