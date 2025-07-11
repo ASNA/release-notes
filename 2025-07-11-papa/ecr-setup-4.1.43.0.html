@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0">
-    <title>ecr-setup | 4.1.42.0</title>
+    <title>ecr-setup | 4.1.43.0</title>
     <link rel="stylesheet" href="https://nyc3.digitaloceanspaces.com/asna-assets/downloads/assets/release-notes.css" />
 </head>
 <body>
 <p><a href="https://asna.com"><img src="https://nyc3.digitaloceanspaces.com/asna-assets/asna-com/home/ASNA-logo.webp" alt="ASNA Logo"/></a></p>
 <h1 id="asna-encore-release-notes">ASNA Encore release notes</h1>
-<p>Version: 4.1.42.0 - GA</p>
+<p>Version: 4.1.43.0 - GA</p>
 <p>Release date: 2025-07-11</p>
 <hr />
 <div style="background-color: pink; padding: 1rem;">
@@ -64,44 +64,19 @@
 
 </body>
 </html>
-<h5 id="SinceVersion">Changes Since Version: 4.1.36.0</h5>
+<h5 id="SinceVersion">Changes Since Version: 4.1.42.0</h5>
 
-<span class="changeNoteHeading">ASNA Services</span>
+<span class="changeNoteHeading"> QSys - DataGate Client</span>
 <ul>
-    <li>ASNA Coordinator - replaces existing ASNA services; resolves a vulnerability issue.</li>
-</ul>
-
-<span class="changeNoteHeading"> QSys - DataGate.Client</span>
-<ul>
-    <li>Clarify and update TLS options.</li>
-</ul>
-
-<span class="changeNoteHeading"> QSys - Expo</span>
-<ul>
-    <li>To Fix Case 21747: Use new configuration value asna:SystemValues:EditCodeFlags.</li>
-    <li>Use RedirectedAbEnd Exception like it is used in YellowPage.</li>
-</ul>
-
-<span class="changeNoteHeading"> QSys - Runtime</span>
-<ul>
-    <li>Case 21747. Set new EditCode.EditCodeFlags to ZeroSuppressAt2ndChar.</li>
-    <li>Use new PrinterConfiguration DG facility.</li>
-    <li>Set query keys on DataSet for Linear. (#179)</li>
+    <li>Fix SQL login password bug.</li>
 </ul>
 
 <span class="changeNoteHeading"> RnD - Encore Compiler</span>
 <ul>
-    <li>Fix crash when generating io.cs file when a record format name has non-C# characters.</li>
-    <li>Re-add temp indicator to CALLD.</li>
-    <li>Give better error message when using *OMIT in CALLB</li>
-    <li>Ensure *OMIT doesn't produce 'ref null' when used as a parameter in CALLD.</li>
-    <li>If LR is not given in CALLD, use "out _" as a parameter in the C# call, instead of a local temp.</li>
-    <li>Ensure enum types are scalars.</li>
-    <li>Make sure type name has its namespace removed if needed.</li>
-    <li>Fixed bugs in generation of TESTNUM code and temp field initialization.</li>
-    <li>Initialize to all '0'. Validate: 1- not externally described, 2- only *Ind fields.</li>
-    <li>Add validation for array DS fields of *Ind type.</li>
-    <li>Support program described files that have the same file, record, and field names.</li>
-    <li>Added support for INDDS with compiler-generated length of 99 positions (Workstation file and Print file).</li>
-    <li>Like integers, byte types can also be enums.</li>
+    <li>Extended ByteType with the same funcionality of IntegerType to support byte enumerations: type equality now considers whether the byte type is an enum; casting is forced if the type is enum.</li>
+</ul>
+
+<span class="changeNoteHeading"> RnD - Encore File Usage Generator</span>
+<ul>
+    <li>Use the original record name (with @, $, etc) in the format IDs dictionary. (#1)</li>
 </ul>
