@@ -2,6 +2,19 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2025-09-30 Family: otis-beta 
+* [avr-setup-17.1.19.0.html](https://asna.github.io/release-notes/2025-09-30-otis-beta/avr-setup-17.1.19.0.html)
+* [browser-terminal-17.1.18.0.html](https://asna.github.io/release-notes/2025-09-30-otis-beta/browser-terminal-17.1.18.0.html)
+* [monarch-nomad-17.1.15.0.html](https://asna.github.io/release-notes/2025-09-30-otis-beta/monarch-nomad-17.1.15.0.html)
+* [wings-setup-11.1.18.0.html](https://asna.github.io/release-notes/2025-09-30-otis-beta/wings-setup-11.1.18.0.html)
+
+#### Release date: 2025-09-30 Family: datagate17.1-beta 
+* [dcs-setup-17.1.19.0.html](https://asna.github.io/release-notes/2025-09-30-datagate17.1-beta/dcs-setup-17.1.19.0.html)
+* [dg400-17.1.11.0.html](https://asna.github.io/release-notes/2025-09-30-datagate17.1-beta/dg400-17.1.11.0.html)
+* [dgmonitor-17.1.15.0.html](https://asna.github.io/release-notes/2025-09-30-datagate17.1-beta/dgmonitor-17.1.15.0.html)
+* [dgstudio-17.1.19.0.html](https://asna.github.io/release-notes/2025-09-30-datagate17.1-beta/dgstudio-17.1.19.0.html)
+* [dss-setup-17.1.19.0.html](https://asna.github.io/release-notes/2025-09-30-datagate17.1-beta/dss-setup-17.1.19.0.html)
+
 #### Release date: 2025-09-02 Family: otis-beta 
 * [avr-setup-17.1.18.0.html](https://asna.github.io/release-notes/2025-09-02-otis-beta/avr-setup-17.1.18.0.html)
 * [browser-terminal-17.1.17.0.html](https://asna.github.io/release-notes/2025-09-02-otis-beta/browser-terminal-17.1.17.0.html)
