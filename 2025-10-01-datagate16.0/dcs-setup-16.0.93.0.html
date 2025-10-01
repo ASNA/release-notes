@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title>dcs-setup | 16.0.93.0</title>
+    <link rel="stylesheet" href="https://nyc3.digitaloceanspaces.com/asna-assets/downloads/assets/release-notes.css" />
+</head>
+<body>
+<p><a href="https://asna.com"><img src="https://nyc3.digitaloceanspaces.com/asna-assets/asna-com/home/ASNA-logo.webp" alt="ASNA Logo"/></a></p>
+<h1 id="asna-datagate-component-suite-release-notes">ASNA DataGate Component Suite release notes</h1>
+<p>Version: 16.0.93.0 - GA</p>
+<p>Release date: 2025-10-01</p>
+<hr />
+<h2 id="net-framework-and-visual-studio">.NET Framework and Visual Studio</h2>
+<p>All ASNA .NET Framework products need .NET 4.8x.</p>
+<p>For Visual RPG, Wings, Mobile RPG, etc, you'll need Visual Studio 2019 Professional Edition or Enterprise Edition. The Visual Studio Community Edition no longer works with ASNA products.</p>
+<p>Also, please make sure your target machine is current with Windows updates.
+<br><span style="font-size: .6rem; color: gray;">nancy\client-requirements.md</span><br></p>
+<h2 id="platform-support">Platform support</h2>
+<p>See the <a href="https://www.asna.com/en/support/product-requirements">ASNA Version Policy</a> for full requirements</p>
+<blockquote>
+<p>You can only install one version of an ASNA Windows product on a single PC. For example, you can't install ASNA Visual RPG for .NET 17.0 on a PC on which ASNA Visual RPG for .NET 16.0 is installed.</p>
+</blockquote>
+<h2 id="general-installation-tips">General installation tips</h2>
+<ul>
+<li><p>We strongly recommend you apply all pending Windows updates before installing any of our Windows products.</p>
+</li>
+<li><p>Don't install any ASNA Windows products while Visual Studio is running.</p>
+</li>
+<li><p>For our products that snap into Visual Studio (ie, Visual RPG for .NET Framework, Wings, Mobile RPG, etc.) be sure to install Visual Studio first.
+<br><span style="font-size: .6rem; color: gray;">platform-support.md</span><br></p>
+</li>
+</ul>
+<h2 id="visual-studio-local-help-installation">Visual Studio local help installation</h2>
+<p>Visual Studio treats local (offline) as an optional component. As such installing it requires <a href="https://docs.asna.com/documentation/Help150/Readmes/Help150VisualStudioWorkloads.htm">some additional steps</a>:</p>
+<blockquote>
+<p>The note above applies to any version of Visual Studio.</p>
+</blockquote>
+<p>When installing Visual Studio:</p>
+<ol>
+<li>Under the Individual Components tab.</li>
+<li>On the Code Tools section.</li>
+<li>Enable the Help Viewer component.</li>
+</ol>
+<p>To verify the Help Viewer is installed, look at the top of the Help Menu in Visual Studio. The following three options should be visible at the top of the menu:</p>
+<ol>
+<li>View Help</li>
+<li>Add and Remove Help Content</li>
+<li>Set Help Preferences
+<br><span style="font-size: .6rem; color: gray;">visual-studio-local-help.md</span><br></li>
+</ol>
+<h2 id="secure-sockets-layer-ssl">Secure Sockets Layer (SSL)</h2>
+<p>The DataGate client software contained in this release significantly changes the way Secure Sockets Layer (SSL) connections are configured. DataGate SSL support was introduced in Version 15 as an option for secure network communications between DataGate clients and servers.</p>
+<p>In prior releases, DataGate client connection configurations, by default, specified an SSL-enabled connection. This allowed many users to enhance the security of their applications by simply installing the new, SSL supporting DataGate release. Unfortunately, other customers experienced connection and security issues due to shifting standards and evolving platform infrastructure supporting SSL, as offered by Windows and IBM i.</p>
+<p>In this release, DataGate client users must now &quot;opt-in&quot; when configuring new connections secured with SSL. When a new connection configuration is created, the default setting is to specify a non-SSL, or &quot;clear-text&quot; connection to the server.</p>
+<p>DataGate connections are typically configured as &quot;database names&quot;. A database name is a collection of properties defining all the information needed to connect to a DataGate server from the client computer. Existing database names are not affected by this change, but new database names are affected:</p>
+<p>Database names created by prior releases retain the same SSL configuration as they had when created or modified.</p>
+<p>The default configuration of new database names will specify non-SSL connections.</p>
+<h3 id="creating-ssl-enabled-database-names">Creating SSL-Enabled Database Names</h3>
+<p>Online documentation linked below fully details the process of creating an SSL-enabled database name configuration using DataGate Studio. The process is very similar for users of DataGate Monitor.</p>
+<p><a href="https://docs.asna.com/documentation/Help150/DataGate/SSL/_HTML/DataGateSSLClient.htm">Read more about DataGate's SSL support</a></p>
+<h3 id="other-datagate-ssl-options">Other DataGate SSL Options</h3>
+<p>DataGate offers many options for enhancing the security of its client/server connection with SSL. For full details of options available for both the client and server, please <a href="https://docs.asna.com/documentation/Help150/DataGate/SSL/_Helphome.htm">consult the online documentation.</a></p>
+<h3 id="configuring-datagate-connections-programmatically">Configuring DataGate Connections Programmatically</h3>
+<p>Connection configurations are represented in DataGate as instances of the SourceProfile class in the DataGate .NET API. While most users and applications will configure connections via database names, some programs use the DataGate API directly.</p>
+<p>Users of the SourceProfile class are advised that the changes in this release may represent a <strong>breaking change</strong> to the behavior of your programs. The default value of the SourceProfile.SslOptions property is now SslOptions.None; in previous releases the default value was SslOptions.Request. If your program does not explicitly set this property, connections made with the SourceProfile instances you create will be clear-text, rather than SSL-enabled.</p>
+<p>If you directly create and use SourceProfile instances in your programs, ASNA highly recommends modifying them to explicitly set SourceProfile.SslOptions before deploying this DataGate release.</p>
+<h3 id="database-name-migration-from-non-ssl-releases">Database Name Migration From Non-SSL Releases</h3>
+<p>Database names created by DataGate releases prior to Version 15 do not contain SSL-related configuration information. When these database names are read by Version 15 software, the configuration is migrated to include SSL configuration options. Prior to this release, those migrations would enable SSL connections, unless otherwise explicitly changed by the user. Henceforth, automatic database name migrations will disable SSL in the connections they represent.</p>
+<p>Users who deploy applications using the database names contained in configuration files created with prior, non-SSL supported DataGate releases are advised that changes in this release may represent a <strong>breaking change</strong> in this deployment strategy, for reasons outlined in the previous paragraph.
+<br><span style="font-size: .6rem; color: gray;">ssl-info.md</span><br></p>
+<h2 id="downloading-with-microsoft-edge">Downloading with Microsoft Edge</h2>
+<p>If this software is downloaded via Edge you may receive a message stating that this file &quot;is not commonly downloaded&quot; when attempting to install it. In this event click the <strong>View Downloads</strong> button, select the ASNA product to install from that list, and confirm that you'd like to install it.</p>
+<p>Similarly, attempting to install the software directly through Microsoft Windows may cause a &quot;Windows protected your PC&quot; message to appear. In this event click the small <code>More Info</code> prompt on the left, and click <code>Run Anyway</code> on the following window.
+<br><span style="font-size: .6rem; color: gray;">ms-edge-warning.md</span><br></p>
+<hr />
+
+</body>
+</html>
+<h5 id="SinceVersion">Changes Since Version: 16.0.92.0</h5>
+
+<span class="changeNoteHeading">Services</span>
+<ul>
+    <li>Case 21780. ASNA Coordinator fails when registry key contains invalid string data.</li>
+</ul>
+
+<span class="changeNoteHeading">Registration Assistant</span>
+<ul>
+    <li>Case 21780. ASNA Coordinator fails when registry key contains invalid string data.</li>
+</ul>
