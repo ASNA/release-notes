@@ -2,6 +2,9 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2025-10-14 Family: coyote-beta 
+* [avr-setup-5.2.12.0.html](https://asna.github.io/release-notes/2025-10-14-coyote-beta/avr-setup-5.2.12.0.html)
+
 #### Release date: 2025-10-01 Family: nancy 
 * [avr-setup-16.0.94.0.html](https://asna.github.io/release-notes/2025-10-01-nancy/avr-setup-16.0.94.0.html)
 * [bterm-setup-16.0.94.0.html](https://asna.github.io/release-notes/2025-10-01-nancy/bterm-setup-16.0.94.0.html)
