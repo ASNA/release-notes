@@ -2,6 +2,22 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2025-12-02 Family: otis 
+* [avr-setup-17.1.19.0.html](https://asna.github.io/release-notes/2025-12-02-otis/avr-setup-17.1.19.0.html)
+* [browser-terminal-17.1.18.0.html](https://asna.github.io/release-notes/2025-12-02-otis/browser-terminal-17.1.18.0.html)
+* [monarch-nomad-17.1.15.0.html](https://asna.github.io/release-notes/2025-12-02-otis/monarch-nomad-17.1.15.0.html)
+* [wings-setup-11.1.18.0.html](https://asna.github.io/release-notes/2025-12-02-otis/wings-setup-11.1.18.0.html)
+
+#### Release date: 2025-12-02 Family: datagate17.1 
+* [dcs-setup-17.1.19.0.html](https://asna.github.io/release-notes/2025-12-02-datagate17.1/dcs-setup-17.1.19.0.html)
+* [dg400-17.1.11.0.html](https://asna.github.io/release-notes/2025-12-02-datagate17.1/dg400-17.1.11.0.html)
+* [dgmonitor-17.1.15.0.html](https://asna.github.io/release-notes/2025-12-02-datagate17.1/dgmonitor-17.1.15.0.html)
+* [dgstudio-17.1.19.0.html](https://asna.github.io/release-notes/2025-12-02-datagate17.1/dgstudio-17.1.19.0.html)
+* [dss-setup-17.1.19.0.html](https://asna.github.io/release-notes/2025-12-02-datagate17.1/dss-setup-17.1.19.0.html)
+
+#### Release date: 2025-12-02 Family: coyote 
+* [avr-setup-5.2.12.0.html](https://asna.github.io/release-notes/2025-12-02-coyote/avr-setup-5.2.12.0.html)
+
 #### Release date: 2025-11-18 Family: papa-beta 
 * [ecr-setup-4.1.51.0.html](https://asna.github.io/release-notes/2025-11-18-papa-beta/ecr-setup-4.1.51.0.html)
 * [monarch-setup-11.4.64.0.html](https://asna.github.io/release-notes/2025-11-18-papa-beta/monarch-setup-11.4.64.0.html)
