@@ -2,6 +2,9 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2025-12-30 Family: coyote 
+* [avr-setup-5.2.12.0.html](https://asna.github.io/release-notes/2025-12-30-coyote/avr-setup-5.2.12.0.html)
+
 #### Release date: 2025-12-10 Family: papa 
 * [ecr-setup-4.1.51.0.html](https://asna.github.io/release-notes/2025-12-10-papa/ecr-setup-4.1.51.0.html)
 * [monarch-setup-11.4.64.0.html](https://asna.github.io/release-notes/2025-12-10-papa/monarch-setup-11.4.64.0.html)
