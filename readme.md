@@ -2,6 +2,10 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2026-01-15 Family: papa-beta 
+* [ecr-setup-4.1.52.0.html](https://asna.github.io/release-notes/2026-01-15-papa-beta/ecr-setup-4.1.52.0.html)
+* [monarch-setup-11.4.65.0.html](https://asna.github.io/release-notes/2026-01-15-papa-beta/monarch-setup-11.4.65.0.html)
+
 #### Release date: 2026-01-15 Family: otis-beta 
 * [avr-setup-17.1.20.0.html](https://asna.github.io/release-notes/2026-01-15-otis-beta/avr-setup-17.1.20.0.html)
 * [browser-terminal-17.1.19.0.html](https://asna.github.io/release-notes/2026-01-15-otis-beta/browser-terminal-17.1.19.0.html)
