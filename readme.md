@@ -2,6 +2,32 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2026-03-03 Family: otis-beta 
+* [Browser-Terminal-with-DataGate-WebPak-17.1.20.0.html](https://asna.github.io/release-notes/2026-03-03-otis-beta/Browser-Terminal-with-DataGate-WebPak-17.1.20.0.html)
+* [Monarch-Nomad-17.1.17.0.html](https://asna.github.io/release-notes/2026-03-03-otis-beta/Monarch-Nomad-17.1.17.0.html)
+* [Visual-RPG-for-.NET-17.1.22.0.html](https://asna.github.io/release-notes/2026-03-03-otis-beta/Visual-RPG-for-.NET-17.1.22.0.html)
+* [Wings-Design-Aid-11.1.21.0.html](https://asna.github.io/release-notes/2026-03-03-otis-beta/Wings-Design-Aid-11.1.21.0.html)
+
+#### Release date: 2026-03-03 Family: otis 
+* [avr-setup-17.1.20.0.html](https://asna.github.io/release-notes/2026-03-03-otis/avr-setup-17.1.20.0.html)
+* [browser-terminal-17.1.19.0.html](https://asna.github.io/release-notes/2026-03-03-otis/browser-terminal-17.1.19.0.html)
+* [monarch-nomad-17.1.16.0.html](https://asna.github.io/release-notes/2026-03-03-otis/monarch-nomad-17.1.16.0.html)
+* [wings-setup-11.1.19.0.html](https://asna.github.io/release-notes/2026-03-03-otis/wings-setup-11.1.19.0.html)
+
+#### Release date: 2026-03-03 Family: datagate17.1-beta 
+* [DataGate-Component-Suite-17.1.22.0.html](https://asna.github.io/release-notes/2026-03-03-datagate17.1-beta/DataGate-Component-Suite-17.1.22.0.html)
+* [DataGate-for-IBM-i-17.1.23.0.html](https://asna.github.io/release-notes/2026-03-03-datagate17.1-beta/DataGate-for-IBM-i-17.1.23.0.html)
+* [DataGate-for-SQL-Server-17.1.22.0.html](https://asna.github.io/release-notes/2026-03-03-datagate17.1-beta/DataGate-for-SQL-Server-17.1.22.0.html)
+* [DataGate-Monitor-17.1.18.0.html](https://asna.github.io/release-notes/2026-03-03-datagate17.1-beta/DataGate-Monitor-17.1.18.0.html)
+* [DataGate-Studio-17.1.22.0.html](https://asna.github.io/release-notes/2026-03-03-datagate17.1-beta/DataGate-Studio-17.1.22.0.html)
+
+#### Release date: 2026-03-03 Family: datagate17.1 
+* [dcs-setup-17.1.20.0.html](https://asna.github.io/release-notes/2026-03-03-datagate17.1/dcs-setup-17.1.20.0.html)
+* [dg400-17.1.11.0.html](https://asna.github.io/release-notes/2026-03-03-datagate17.1/dg400-17.1.11.0.html)
+* [dgmonitor-17.1.16.0.html](https://asna.github.io/release-notes/2026-03-03-datagate17.1/dgmonitor-17.1.16.0.html)
+* [dgstudio-17.1.20.0.html](https://asna.github.io/release-notes/2026-03-03-datagate17.1/dgstudio-17.1.20.0.html)
+* [dss-setup-17.1.20.0.html](https://asna.github.io/release-notes/2026-03-03-datagate17.1/dss-setup-17.1.20.0.html)
+
 #### Release date: 2026-02-23 Family: papa-beta 
 * [Encore-RPG-4.1.59.0.html](https://asna.github.io/release-notes/2026-02-23-papa-beta/Encore-RPG-4.1.59.0.html)
 * [Monarch-11.4.70.0.html](https://asna.github.io/release-notes/2026-02-23-papa-beta/Monarch-11.4.70.0.html)
