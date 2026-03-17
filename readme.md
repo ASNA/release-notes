@@ -2,6 +2,11 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2026-03-17 Family: papa-beta 
+* [Encore-RPG-4.1.61.0.html](https://asna.github.io/release-notes/2026-03-17-papa-beta/Encore-RPG-4.1.61.0.html)
+* [Monarch-11.4.73.0.html](https://asna.github.io/release-notes/2026-03-17-papa-beta/Monarch-11.4.73.0.html)
+* [Synon-Escape-11.4.57.0.html](https://asna.github.io/release-notes/2026-03-17-papa-beta/Synon-Escape-11.4.57.0.html)
+
 #### Release date: 2026-03-06 Family: papa-beta 
 * [Encore-RPG-4.1.61.0.html](https://asna.github.io/release-notes/2026-03-06-papa-beta/Encore-RPG-4.1.61.0.html)
 * [Monarch-11.4.70.0.html](https://asna.github.io/release-notes/2026-03-06-papa-beta/Monarch-11.4.70.0.html)
