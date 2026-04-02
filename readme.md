@@ -2,6 +2,18 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2026-04-02 Family: papa---what is this 
+* [dcs-setup-17.0.36.0.html](https://asna.github.io/release-notes/2026-04-02-papa---what is this/dcs-setup-17.0.36.0.html)
+* [dg400-17.0.41.0.html](https://asna.github.io/release-notes/2026-04-02-papa---what is this/dg400-17.0.41.0.html)
+* [dgmonitor-17.0.26.0.html](https://asna.github.io/release-notes/2026-04-02-papa---what is this/dgmonitor-17.0.26.0.html)
+* [dgstudio-17.0.38.0.html](https://asna.github.io/release-notes/2026-04-02-papa---what is this/dgstudio-17.0.38.0.html)
+* [dss-setup-17.0.36.0.html](https://asna.github.io/release-notes/2026-04-02-papa---what is this/dss-setup-17.0.36.0.html)
+
+#### Release date: 2026-04-02 Family: papa 
+* [Encore-RPG-4.1.62.0.html](https://asna.github.io/release-notes/2026-04-02-papa/Encore-RPG-4.1.62.0.html)
+* [Monarch-11.4.73.0.html](https://asna.github.io/release-notes/2026-04-02-papa/Monarch-11.4.73.0.html)
+* [Synon-Escape-11.4.60.0.html](https://asna.github.io/release-notes/2026-04-02-papa/Synon-Escape-11.4.60.0.html)
+
 #### Release date: 2026-03-17 Family: papa-beta 
 * [Encore-RPG-4.1.61.0.html](https://asna.github.io/release-notes/2026-03-17-papa-beta/Encore-RPG-4.1.61.0.html)
 * [Monarch-11.4.73.0.html](https://asna.github.io/release-notes/2026-03-17-papa-beta/Monarch-11.4.73.0.html)
@@ -370,13 +382,6 @@ This is the repository of release notes for ASNA product downloads.
 * [monarch-setup-10.0.91.0.html](https://asna.github.io/release-notes/2024-12-11-nancy/monarch-setup-10.0.91.0.html)
 * [synon-escape-10.0.62.0.html](https://asna.github.io/release-notes/2024-12-11-nancy/synon-escape-10.0.62.0.html)
 * [wings-setup-10.0.95.0.html](https://asna.github.io/release-notes/2024-12-11-nancy/wings-setup-10.0.95.0.html)
-
-#### Release date: 2024-12-11 Family: datagate17.0 
-* [dcs-setup-17.0.36.0.html](https://asna.github.io/release-notes/2024-12-11-datagate17.0/dcs-setup-17.0.36.0.html)
-* [dg400-17.0.41.0.html](https://asna.github.io/release-notes/2024-12-11-datagate17.0/dg400-17.0.41.0.html)
-* [dgmonitor-17.0.26.0.html](https://asna.github.io/release-notes/2024-12-11-datagate17.0/dgmonitor-17.0.26.0.html)
-* [dgstudio-17.0.38.0.html](https://asna.github.io/release-notes/2024-12-11-datagate17.0/dgstudio-17.0.38.0.html)
-* [dss-setup-17.0.36.0.html](https://asna.github.io/release-notes/2024-12-11-datagate17.0/dss-setup-17.0.36.0.html)
 
 #### Release date: 2024-12-11 Family: datagate16 
 * [dcs-setup-16.0.89.0.html](https://asna.github.io/release-notes/2024-12-11-datagate16/dcs-setup-16.0.89.0.html)
