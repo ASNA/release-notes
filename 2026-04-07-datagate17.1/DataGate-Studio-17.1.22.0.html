@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0">
-    <title>dgstudio | 17.1.20.0</title>
+    <title>DataGate Studio | 17.1.22.0</title>
     <link rel="stylesheet" href="https://nyc3.digitaloceanspaces.com/asna-assets/downloads/assets/release-notes.css" />
 </head>
 <body>
 <p><a href="https://asna.com"><img src="https://nyc3.digitaloceanspaces.com/asna-assets/asna-com/home/ASNA-logo.webp" alt="ASNA Logo"/></a></p>
 <h1 id="datagate-studio-release-notes">DataGate Studio release notes</h1>
-<p>Version: 17.1.20.0 - GA</p>
+<p>Version: 17.1.22.0 - GA</p>
 <p>Release date: 2026-04-07</p>
 <hr />
 <p>The DataGate Explorer fulfills a somewhat specialized need, but when you do need it it is very handy.</p>
@@ -48,27 +48,34 @@
 
 </body>
 </html>
-<h5 id="SinceVersion">Changes Since Version: 17.1.19.0</h5>
+<h5 id="SinceVersion">Changes Since Version: 17.1.20.0</h5>
+
+<span class="changeNoteHeading">Clients - DataGate</span>
+<ul>
+    <li>Case 21825. *SQLCLIENT library management APIs fail when the name is a T-SQL keyword.</li>
+</ul>
+
+<span class="changeNoteHeading">QSys - DataGate.Client</span>
+<ul>
+    <li>Case 21825. *SQLCLIENT library management APIs fail when the name is a T-SQL keyword.</li>
+    <li>Use ISO format in Manuscripts for process and report timestamps.</li>
+</ul>
 
 <span class="changeNoteHeading">QSys - Expo</span>
 <ul>
-    <li>Added AlternateHelpKey, AlternatePageUpKey and AlternatePageDownKey attributes to DisplayPageModel.</li>
-    <li>Check for Attn &amp; EndRequest key before attempting to set Resulting Indicators.</li>
-    <li>Create YellowController to facilitate creation of web APIs.</li>
-    <li>Defult Job ClassSuffix for YellowController to empty string.</li>
-    <li>Provide Call() overloads without the assemblyPath parameter.</li>
+    <li>Added property to identify a subfile as multi-column.</li>
+    <li>Added support to DdsSubfileControl Tag helper to provide Column count to JavaScript.</li>
+    <li>Provide a &#39;Default&#39; attribute as target of DFT DDS Keyword.</li>
 </ul>
 
 <span class="changeNoteHeading">QSys - Runtime</span>
 <ul>
-    <li>Add missing Open with Indicator error parameter (we only had char error parameter).</li>
-    <li>Allow Command.Calls to find program without assembly path.</li>
-    <li>Allow unqualified class names on StaticCaller Calls.</li>
-    <li>Check for assembly file existence before attempting to load it.</li>
-    <li>Make RetrieveUserProfile Public and use Ind type for INLR on AttentionProgram calling.</li>
-</ul>
-
-<span class="changeNoteHeading">RnD - Encore File Usage Generator</span>
-<ul>
-    <li>Find out which character replacements to use based on the xfu stamp (Encore or Trekker).</li>
+    <li>Added missing overloads for passing the RRN field byref.</li>
+    <li>Allow Workstation file to be reopened. Use ISO format in Manuscripts Autofields.</li>
+    <li>Fix MOVEARR for numeric scalars.</li>
+    <li>Fixed bug in CHAIN using RRN, where the subfile RRN field was not updated with the RRN of the record read. Enhanced translation of READC to avoid using intermediate fields for when a subfile has a fixed decimal RRN field.</li>
+    <li>Overload Close method with an Indicator error-reporting parameter in WorkstationFile and MutliFormatDBFile.</li>
+    <li>Support DFT Display Field. Use SFL Control FKeys.</li>
+    <li>Test first for string type.</li>
+    <li>When using READE expand/truncate all string key parts to the exact length of the key field.</li>
 </ul>

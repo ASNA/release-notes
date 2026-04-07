@@ -3,17 +3,17 @@
 This is the repository of release notes for ASNA product downloads.
 
 #### Release date: 2026-04-07 Family: otis 
-* [avr-setup-17.1.20.0.html](https://asna.github.io/release-notes/2026-04-07-otis/avr-setup-17.1.20.0.html)
-* [browser-terminal-17.1.19.0.html](https://asna.github.io/release-notes/2026-04-07-otis/browser-terminal-17.1.19.0.html)
-* [monarch-nomad-17.1.16.0.html](https://asna.github.io/release-notes/2026-04-07-otis/monarch-nomad-17.1.16.0.html)
-* [wings-setup-11.1.19.0.html](https://asna.github.io/release-notes/2026-04-07-otis/wings-setup-11.1.19.0.html)
+* [Browser-Terminal-with-DataGate-WebPak-17.1.20.0.html](https://asna.github.io/release-notes/2026-04-07-otis/Browser-Terminal-with-DataGate-WebPak-17.1.20.0.html)
+* [Monarch-Nomad-17.1.17.0.html](https://asna.github.io/release-notes/2026-04-07-otis/Monarch-Nomad-17.1.17.0.html)
+* [Visual-RPG-for-.NET-17.1.22.0.html](https://asna.github.io/release-notes/2026-04-07-otis/Visual-RPG-for-.NET-17.1.22.0.html)
+* [Wings-Design-Aid-11.1.21.0.html](https://asna.github.io/release-notes/2026-04-07-otis/Wings-Design-Aid-11.1.21.0.html)
 
 #### Release date: 2026-04-07 Family: datagate17.1 
-* [dcs-setup-17.1.20.0.html](https://asna.github.io/release-notes/2026-04-07-datagate17.1/dcs-setup-17.1.20.0.html)
-* [dg400-17.1.11.0.html](https://asna.github.io/release-notes/2026-04-07-datagate17.1/dg400-17.1.11.0.html)
-* [dgmonitor-17.1.16.0.html](https://asna.github.io/release-notes/2026-04-07-datagate17.1/dgmonitor-17.1.16.0.html)
-* [dgstudio-17.1.20.0.html](https://asna.github.io/release-notes/2026-04-07-datagate17.1/dgstudio-17.1.20.0.html)
-* [dss-setup-17.1.20.0.html](https://asna.github.io/release-notes/2026-04-07-datagate17.1/dss-setup-17.1.20.0.html)
+* [DataGate-Component-Suite-17.1.22.0.html](https://asna.github.io/release-notes/2026-04-07-datagate17.1/DataGate-Component-Suite-17.1.22.0.html)
+* [DataGate-for-IBM-i-17.1.23.0.html](https://asna.github.io/release-notes/2026-04-07-datagate17.1/DataGate-for-IBM-i-17.1.23.0.html)
+* [DataGate-for-SQL-Server-17.1.22.0.html](https://asna.github.io/release-notes/2026-04-07-datagate17.1/DataGate-for-SQL-Server-17.1.22.0.html)
+* [DataGate-Monitor-17.1.18.0.html](https://asna.github.io/release-notes/2026-04-07-datagate17.1/DataGate-Monitor-17.1.18.0.html)
+* [DataGate-Studio-17.1.22.0.html](https://asna.github.io/release-notes/2026-04-07-datagate17.1/DataGate-Studio-17.1.22.0.html)
 
 #### Release date: 2026-04-02 Family: papa 
 * [Encore-RPG-4.1.62.0.html](https://asna.github.io/release-notes/2026-04-02-papa/Encore-RPG-4.1.62.0.html)
