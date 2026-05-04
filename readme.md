@@ -2,6 +2,11 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2026-05-03 Family: papa-beta 
+* [Encore-RPG-4.1.67.0.html](https://asna.github.io/release-notes/2026-05-03-papa-beta/Encore-RPG-4.1.67.0.html)
+* [Monarch-11.4.76.0.html](https://asna.github.io/release-notes/2026-05-03-papa-beta/Monarch-11.4.76.0.html)
+* [Synon-Escape-11.4.63.0.html](https://asna.github.io/release-notes/2026-05-03-papa-beta/Synon-Escape-11.4.63.0.html)
+
 #### Release date: 2026-04-07 Family: otis 
 * [Browser-Terminal-with-DataGate-WebPak-17.1.20.0.html](https://asna.github.io/release-notes/2026-04-07-otis/Browser-Terminal-with-DataGate-WebPak-17.1.20.0.html)
 * [Monarch-Nomad-17.1.17.0.html](https://asna.github.io/release-notes/2026-04-07-otis/Monarch-Nomad-17.1.17.0.html)
