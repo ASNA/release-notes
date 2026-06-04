@@ -2,6 +2,9 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2026-06-04 Family: coyote-beta 
+* [Visual-RPG-Classic-5.2.15.0.html](https://asna.github.io/release-notes/2026-06-04-coyote-beta/Visual-RPG-Classic-5.2.15.0.html)
+
 #### Release date: 2026-05-13 Family: papa 
 * [Encore-RPG-4.1.67.0.html](https://asna.github.io/release-notes/2026-05-13-papa/Encore-RPG-4.1.67.0.html)
 * [Monarch-11.4.76.0.html](https://asna.github.io/release-notes/2026-05-13-papa/Monarch-11.4.76.0.html)
