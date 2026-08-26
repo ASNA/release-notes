@@ -2,6 +2,24 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2026-08-25 Family: quebec-beta 
+* [avr-setup-18.0.22.0.html](https://asna.github.io/release-notes/2026-08-25-quebec-beta/avr-setup-18.0.22.0.html)
+* [browser-terminal-18.0.21.0.html](https://asna.github.io/release-notes/2026-08-25-quebec-beta/browser-terminal-18.0.21.0.html)
+* [deployment-setup-18.0.21.0.html](https://asna.github.io/release-notes/2026-08-25-quebec-beta/deployment-setup-18.0.21.0.html)
+* [ecr-setup-5.0.23.0.html](https://asna.github.io/release-notes/2026-08-25-quebec-beta/ecr-setup-5.0.23.0.html)
+* [monarch-framework-setup-12.0.22.0.html](https://asna.github.io/release-notes/2026-08-25-quebec-beta/monarch-framework-setup-12.0.22.0.html)
+* [monarch-setup-12.0.19.0.html](https://asna.github.io/release-notes/2026-08-25-quebec-beta/monarch-setup-12.0.19.0.html)
+* [synon-escape-12.0.17.0.html](https://asna.github.io/release-notes/2026-08-25-quebec-beta/synon-escape-12.0.17.0.html)
+* [wings-setup-12.0.22.0.html](https://asna.github.io/release-notes/2026-08-25-quebec-beta/wings-setup-12.0.22.0.html)
+
+#### Release date: 2026-08-25 Family: datagate18.0-beta 
+* [dcs-setup-18.0.22.0.html](https://asna.github.io/release-notes/2026-08-25-datagate18.0-beta/dcs-setup-18.0.22.0.html)
+* [dg400-18.0.10.0.html](https://asna.github.io/release-notes/2026-08-25-datagate18.0-beta/dg400-18.0.10.0.html)
+* [dgmonitor-18.0.16.0.html](https://asna.github.io/release-notes/2026-08-25-datagate18.0-beta/dgmonitor-18.0.16.0.html)
+* [dgstudio-18.0.22.0.html](https://asna.github.io/release-notes/2026-08-25-datagate18.0-beta/dgstudio-18.0.22.0.html)
+* [dss-setup-18.0.22.0.html](https://asna.github.io/release-notes/2026-08-25-datagate18.0-beta/dss-setup-18.0.22.0.html)
+* [webpak-18.2.21.0.html](https://asna.github.io/release-notes/2026-08-25-datagate18.0-beta/webpak-18.2.21.0.html)
+
 #### Release date: 2026-07-28 Family: papa 
 * [Encore-RPG-4.1.68.0.html](https://asna.github.io/release-notes/2026-07-28-papa/Encore-RPG-4.1.68.0.html)
 * [Monarch-11.4.77.0.html](https://asna.github.io/release-notes/2026-07-28-papa/Monarch-11.4.77.0.html)
