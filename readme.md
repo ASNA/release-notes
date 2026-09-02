@@ -2,6 +2,9 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2026-09-02 Family: badger 
+* [avr-setup-5-5.1.29.0.html](https://asna.github.io/release-notes/2026-09-02-badger/avr-setup-5-5.1.29.0.html)
+
 #### Release date: 2026-08-25 Family: quebec-beta 
 * [avr-setup-18.0.22.0.html](https://asna.github.io/release-notes/2026-08-25-quebec-beta/avr-setup-18.0.22.0.html)
 * [browser-terminal-18.0.21.0.html](https://asna.github.io/release-notes/2026-08-25-quebec-beta/browser-terminal-18.0.21.0.html)
