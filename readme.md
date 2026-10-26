@@ -12,6 +12,14 @@ This is the repository of release notes for ASNA product downloads.
 * [synon-escape-12.0.17.0.html](https://asna.github.io/release-notes/2026-10-26-quebec/synon-escape-12.0.17.0.html)
 * [wings-setup-12.0.22.0.html](https://asna.github.io/release-notes/2026-10-26-quebec/wings-setup-12.0.22.0.html)
 
+#### Release date: 2026-10-26 Family: datagate18.0 
+* [dcs-setup-18.0.22.0.html](https://asna.github.io/release-notes/2026-10-26-datagate18.0/dcs-setup-18.0.22.0.html)
+* [dg400-18.0.10.0.html](https://asna.github.io/release-notes/2026-10-26-datagate18.0/dg400-18.0.10.0.html)
+* [dgmonitor-18.0.16.0.html](https://asna.github.io/release-notes/2026-10-26-datagate18.0/dgmonitor-18.0.16.0.html)
+* [dgstudio-18.0.22.0.html](https://asna.github.io/release-notes/2026-10-26-datagate18.0/dgstudio-18.0.22.0.html)
+* [dss-setup-18.0.22.0.html](https://asna.github.io/release-notes/2026-10-26-datagate18.0/dss-setup-18.0.22.0.html)
+* [webpak-18.2.21.0.html](https://asna.github.io/release-notes/2026-10-26-datagate18.0/webpak-18.2.21.0.html)
+
 #### Release date: 2026-09-02 Family: coyote 
 * [Visual-RPG-Classic-5.2.15.0.html](https://asna.github.io/release-notes/2026-09-02-coyote/Visual-RPG-Classic-5.2.15.0.html)
 
