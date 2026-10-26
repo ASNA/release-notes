@@ -2,6 +2,16 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2026-10-26 Family: quebec 
+* [avr-setup-18.0.22.0.html](https://asna.github.io/release-notes/2026-10-26-quebec/avr-setup-18.0.22.0.html)
+* [browser-terminal-18.0.21.0.html](https://asna.github.io/release-notes/2026-10-26-quebec/browser-terminal-18.0.21.0.html)
+* [deployment-setup-18.0.21.0.html](https://asna.github.io/release-notes/2026-10-26-quebec/deployment-setup-18.0.21.0.html)
+* [ecr-setup-5.0.23.0.html](https://asna.github.io/release-notes/2026-10-26-quebec/ecr-setup-5.0.23.0.html)
+* [monarch-framework-setup-12.0.22.0.html](https://asna.github.io/release-notes/2026-10-26-quebec/monarch-framework-setup-12.0.22.0.html)
+* [monarch-setup-12.0.19.0.html](https://asna.github.io/release-notes/2026-10-26-quebec/monarch-setup-12.0.19.0.html)
+* [synon-escape-12.0.17.0.html](https://asna.github.io/release-notes/2026-10-26-quebec/synon-escape-12.0.17.0.html)
+* [wings-setup-12.0.22.0.html](https://asna.github.io/release-notes/2026-10-26-quebec/wings-setup-12.0.22.0.html)
+
 #### Release date: 2026-09-02 Family: coyote 
 * [Visual-RPG-Classic-5.2.15.0.html](https://asna.github.io/release-notes/2026-09-02-coyote/Visual-RPG-Classic-5.2.15.0.html)
 
