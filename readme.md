@@ -2,6 +2,18 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2026-11-09 Family: otis-beta 
+* [Browser-Terminal-with-DataGate-WebPak-17.1.23.0.html](https://asna.github.io/release-notes/2026-11-09-otis-beta/Browser-Terminal-with-DataGate-WebPak-17.1.23.0.html)
+* [Monarch-Nomad-17.1.19.0.html](https://asna.github.io/release-notes/2026-11-09-otis-beta/Monarch-Nomad-17.1.19.0.html)
+* [Visual-RPG-for-.NET-17.1.24.0.html](https://asna.github.io/release-notes/2026-11-09-otis-beta/Visual-RPG-for-.NET-17.1.24.0.html)
+* [Wings-Design-Aid-11.1.23.0.html](https://asna.github.io/release-notes/2026-11-09-otis-beta/Wings-Design-Aid-11.1.23.0.html)
+
+#### Release date: 2026-11-09 Family: datagate17.1-beta 
+* [DataGate-Component-Suite-17.1.24.0.html](https://asna.github.io/release-notes/2026-11-09-datagate17.1-beta/DataGate-Component-Suite-17.1.24.0.html)
+* [DataGate-for-SQL-Server-17.1.24.0.html](https://asna.github.io/release-notes/2026-11-09-datagate17.1-beta/DataGate-for-SQL-Server-17.1.24.0.html)
+* [DataGate-Monitor-17.1.20.0.html](https://asna.github.io/release-notes/2026-11-09-datagate17.1-beta/DataGate-Monitor-17.1.20.0.html)
+* [DataGate-Studio-17.1.24.0.html](https://asna.github.io/release-notes/2026-11-09-datagate17.1-beta/DataGate-Studio-17.1.24.0.html)
+
 #### Release date: 2026-10-26 Family: quebec 
 * [avr-setup-18.0.22.0.html](https://asna.github.io/release-notes/2026-10-26-quebec/avr-setup-18.0.22.0.html)
 * [browser-terminal-18.0.21.0.html](https://asna.github.io/release-notes/2026-10-26-quebec/browser-terminal-18.0.21.0.html)
