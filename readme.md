@@ -3,6 +3,10 @@
 This is the repository of release notes for ASNA product downloads.
 
 #### Release date: 2026-11-24 Family: datagate17.1-beta 
+* [DataGate-Component-Suite-17.1.24.0.html](https://asna.github.io/release-notes/2026-11-24-datagate17.1-beta/DataGate-Component-Suite-17.1.24.0.html)
+* [DataGate-for-SQL-Server-17.1.24.0.html](https://asna.github.io/release-notes/2026-11-24-datagate17.1-beta/DataGate-for-SQL-Server-17.1.24.0.html)
+* [DataGate-Monitor-17.1.20.0.html](https://asna.github.io/release-notes/2026-11-24-datagate17.1-beta/DataGate-Monitor-17.1.20.0.html)
+* [DataGate-Studio-17.1.24.0.html](https://asna.github.io/release-notes/2026-11-24-datagate17.1-beta/DataGate-Studio-17.1.24.0.html)
 * [dg400-17.1.25.0.html](https://asna.github.io/release-notes/2026-11-24-datagate17.1-beta/dg400-17.1.25.0.html)
 
 #### Release date: 2026-11-20 Family: papa-beta 
