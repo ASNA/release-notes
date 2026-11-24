@@ -2,6 +2,9 @@
 
 This is the repository of release notes for ASNA product downloads.
 
+#### Release date: 2026-11-24 Family: datagate17.1-beta 
+* [dg400-17.1.25.0.html](https://asna.github.io/release-notes/2026-11-24-datagate17.1-beta/dg400-17.1.25.0.html)
+
 #### Release date: 2026-11-20 Family: papa-beta 
 * [Encore-RPG-4.1.78.0.html](https://asna.github.io/release-notes/2026-11-20-papa-beta/Encore-RPG-4.1.78.0.html)
 * [Monarch-11.4.82.0.html](https://asna.github.io/release-notes/2026-11-20-papa-beta/Monarch-11.4.82.0.html)
